@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" xmls="http://wwww.w3.org/2000/xhtml" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+<!--svg宣告用-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>web_lym</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/Chart.min.js"></script><!-- 五角圖 -->
+
+</head>
+
+<body>
+
+<div class="container-fluid detail">
+    <div class="layer l"></div>
+    <div class="layer m"></div>
+    <div class="layer r"></div>
+    <div class="layerT l"></div>
+    <div class="layerT r"></div>
+    <div class="layerT m"></div>
+    <div class="flexContainerBtn">
+        <a title="web_lym" target="_parent" class="icon-box btn-showmore-close" href="javascript:window.history.back(-1);"></a>
+    </div>
+        <div class="section-title web">
+            <div class="flexContainerBtn">
+                <a class="box-img web" href="javascript:window.history.back(-1);"></a>
+            </div>
+            <svg>
+                <text x="0" y="50%" dominant-baseline="middle">
+                    <tspan>W</tspan>
+                    <tspan>e</tspan>
+                    <tspan>b</tspan>
+                    <tspan dx="15px">D</tspan>
+                    <tspan>e</tspan>
+                    <tspan>s</tspan>
+                    <tspan>i</tspan>
+                    <tspan>g</tspan>
+                    <tspan>n</tspan>
+                </text>
+            </svg>
+        </div>
+
+        <article class="container box-photo">
+            
+            <div class="row">
+                <div class="col-md-7 wow zoomIn">
+                    <!--影片模式-->
+                    <video id="video1" class="img-thumbnail" preload loop poster="img/web/lym01.jpg" onclick="playPause1()">
+                        <source src="video/lym_1.mp4" type="video/mp4" />
+                    </video>
+                    <a href="video/lym_1.mp4" class="button-video" onclick="playPause1()" data-icon="fa-caret-right">
+                        <span class="button_corner top-right"></span>
+                        <span class="button_corner top-left"></span>
+                        <span class="button_corner bottom-left"></span>
+                        <span class="button_corner bottom-right"></span>
+                    </a>
+                </div>
+
+                <script>
+                    var myVideo1 = document.getElementById("video1");
+                    function playPause1() {
+                        if (myVideo1.paused)
+                            myVideo1.play();
+                        else
+                            myVideo1.pause();
+                    }
+                </script>
+
+                <div class="col-md-5 wow zoomIn">
+                    <a class="caption" href="#">
+                        <span class="panel-border">
+                            <span class="button_corner top-right"></span>
+                            <span class="button_corner top-left"></span>
+                            <span class="button_corner bottom-left"></span>
+                            <span class="button_corner bottom-right"></span>
+                            <hgroup>
+                                <h4>蘭陽數位知識主題/典藏館</h4>
+                                <p class="font03">
+                                    任務:(提案)風格方向、視覺設計、切版、無障礙事項設計、互動視覺coder功能
+                                </p>
+                                <p class="font03">
+                                    發想:典藏知識館多為古物，所以以水墨風格呈現，以古代書冊、折頁、線條加以點綴。與工程師討論層級分類，類別清單>主題清單>單元清單>單元介紹>單一明細。運用蘭陽博物館建物形體和龜山島。典藏館風格採用葛瑪蘭的圖騰結合宜蘭田園風光和藍染,帶出清新優雅感。有大量的資訊，在製作摘要卡片時需考量無障礙事宜。
+                                </p>
+                                <p class="font03">
+                                    角色:網頁設計師
+                                </p>
+                                <div class="chart-container">
+                                    <canvas class="chart" id="radarChart1"></canvas>
+                                </div>
+                                <figure class="tone lym">
+                                    <span class="snip01">
+                                        <h6>主色調</h6>
+                                    </span>
+                                    <span class="snip01">
+                                        <h6>次色調</h6>
+                                    </span>
+                                    <span class="snip01">
+                                        <h6>次色調</h6>
+                                    </span>
+                                    <span class="snip01">
+                                        <h6>次色調</h6>
+                                    </span>
+                                </figure>
+                            </hgroup>
+                        </span>
+                    </a>                       
+                </div>      
+            </div>
+            <div class="row">
+                <div class="col-md-12 wow zoomIn" data-wow-delay="1s">
+                    <img class="img-thumbnail box-top01" src="img/web/lym02.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 wow zoomIn" data-wow-delay="1.5s">
+                    <video id="video2" class="img-thumbnail box-top01 v1 bgC01" preload loop poster="img/web/lym03.jpg" onclick="playPause2()">
+                        <source src="video/lym_2.mp4" type="video/mp4" />
+                    </video>
+                    <a href="video/lym_2.mp4" class="button-video" onclick="playPause2()" data-icon="fa-caret-right">
+                        <span class="button_corner top-right"></span>
+                        <span class="button_corner top-left"></span>
+                        <span class="button_corner bottom-left"></span>
+                        <span class="button_corner bottom-right"></span>
+                    </a>
+                </div>
+                <div class="col-md-6 wow zoomIn" data-wow-delay="1.5s">
+                    <video id="video3" class="img-thumbnail box-top01 v1 bgC02" preload loop poster="img/web/lym04.jpg" onclick="playPause3()">
+                        <source src="video/lym_3.mp4" type="video/mp4" />
+                    </video>
+                    <a href="video/lym_3.mp4" class="button-video" onclick="playPause3()" data-icon="fa-caret-right">
+                        <span class="button_corner top-right"></span>
+                        <span class="button_corner top-left"></span>
+                        <span class="button_corner bottom-left"></span>
+                        <span class="button_corner bottom-right"></span>
+                    </a>
+                </div>
+            </div>
+                <script>
+                    var myVideo2 = document.getElementById("video2");
+                    function playPause2() {
+                        if (myVideo2.paused)
+                            myVideo2.play();
+                        else
+                            myVideo2.pause();
+                    }
+
+                    var myVideo3 = document.getElementById("video3");
+                        function playPause3() {
+                            if (myVideo3.paused)
+                                myVideo3.play();
+                            else
+                                myVideo3.pause();
+                        }
+                </script>
+            <div class="row box-top01-last">
+                <div class="col-md-12 wow zoomIn" data-wow-delay="1s">
+                    <img class="img-thumbnail box-top01" src="img/web/lym05.jpg">
+                </div>
+            </div>
+        
+        </article>
+        <!--./list_text-->
+       
+
+
+
+
+
+
+
+
+
+
+       
+
+</div>
+
+
+
+
+
+    
+    <script src="js/chart-radar.js"></script><!-- 五角圖 -->
+    <script src="js/script.js"></script>
+    <script src="js/slider_tab.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js'></script>
+
+</body>
+
+</html>

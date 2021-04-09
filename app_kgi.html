@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" xmls="http://wwww.w3.org/2000/xhtml" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+<!--svg宣告用-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>app_kgi</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container-fluid detail">
+    <div class="layer l"></div>
+    <div class="layer m"></div>
+    <div class="layer r"></div>
+    <div class="layerT l"></div>
+    <div class="layerT r"></div>
+    <div class="layerT m"></div>
+    <div class="flexContainerBtn">
+        <a title="app_kgi" target="_parent" class="icon-box btn-showmore-close" href="javascript:window.history.back(-1);"></a>
+    </div>
+        <div class="section-title app">
+            <div class="flexContainerBtn">
+                <a class="box-img app" href="javascript:window.history.back(-1);"></a>
+            </div>
+            <svg>
+                <text x="0" y="50%" dominant-baseline="middle">
+                    <tspan>A</tspan>
+                    <tspan>p</tspan>
+                    <tspan>p</tspan>
+                    <tspan dx="15px">D</tspan>
+                    <tspan>e</tspan>
+                    <tspan>s</tspan>
+                    <tspan>i</tspan>
+                    <tspan>g</tspan>
+                    <tspan>n</tspan>
+                </text>
+            </svg>
+        </div>
+
+        <article class="container box-photo">
+            
+            <div class="row">
+                <div class="col-md-7 wow zoomIn">
+                    <!--影片模式-->
+                    <video id="video1" class="img-thumbnail" preload loop poster="img/app/kgi01.jpg" onclick="playPause1()">
+                        <source src="video/kgi_1.mp4" type="video/mp4" />
+                    </video>
+                    <a href="video/kgi_1.mp4" class="button-video" onclick="playPause1()" data-icon="fa-caret-right">
+                        <span class="button_corner top-right"></span>
+                        <span class="button_corner top-left"></span>
+                        <span class="button_corner bottom-left"></span>
+                        <span class="button_corner bottom-right"></span>
+                    </a>
+                </div>
+                
+                <script>
+                    var myVideo1 = document.getElementById("video1");
+                    function playPause1() {
+                        if (myVideo1.paused)
+                            myVideo1.play();
+                        else
+                            myVideo1.pause();
+                    }
+                </script>
+
+                <div class="col-md-5 wow zoomIn">
+                    <a class="caption" href="#">
+                        <span class="panel-border">
+                            <span class="button_corner top-right"></span>
+                            <span class="button_corner top-left"></span>
+                            <span class="button_corner bottom-left"></span>
+                            <span class="button_corner bottom-right"></span>
+                            <hgroup>
+                                <h4>凱基銀行貸款試算</h4>
+                                <p class="font03">
+                                    任務:功能視覺設計、互動視覺coder功能、App頁面設計
+                                </p>
+                                <p class="font03">
+                                    角色:網頁設計師
+                                </p>
+                                <div class="chart-container">
+                                    <canvas class="chart" id="radarChart8"></canvas>
+                                </div>
+                                <figure class="tone kgi">
+                                    <span class="snip01">
+                                        <h6>主色調</h6>
+                                    </span>
+                                    <span class="snip01">
+                                        <h6>次色調</h6>
+                                    </span>
+                                    <span class="snip01">
+                                        <h6>次色調</h6>
+                                    </span>
+                                </figure>
+                            </hgroup>
+                        </span>
+                    </a>                       
+                </div>      
+            </div>
+            <div class="row box-top01-last">
+                <div class="col-md-12 wow zoomIn" data-wow-delay="1s">
+                    <img class="img-thumbnail box-top01" src="img/app/kgi02.jpg">
+                </div>
+            </div>
+            
+        
+        </article>
+        <!--./list_text-->
+       
+
+
+
+
+
+
+
+
+
+
+       
+
+</div>
+
+
+
+
+
+    
+    <script src="js/chart-radar.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slider_tab.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js'></script>
+
+</body>
+
+</html>
