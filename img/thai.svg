@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="354px" viewBox="0 0 512 354" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>thai</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-1.6%" y="-2.3%" width="103.1%" height="104.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.4   0 0 0 0 0.4   0 0 0 0 0.4  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-2" x="0" y="0" width="512" height="354" rx="12"></rect>
+        <rect id="path-4" x="256" y="0" width="256" height="354"></rect>
+        <filter x="-1.2%" y="-0.8%" width="102.3%" height="101.7%" filterUnits="objectBoundingBox" id="filter-5">
+            <feMorphology radius="3" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
+            <feGaussianBlur stdDeviation="0.5" in="shadowSpreadInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="2" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.836495536   0 0 0 0 0.836495536   0 0 0 0 0.836495536  0 0 0 0.119593524 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="thai" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="下載-(2)" filter="url(#filter-1)">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Mask" fill="#D8D8D8" fill-rule="nonzero" xlink:href="#path-2"></use>
+            <image mask="url(#mask-3)" x="0" y="-91" width="512" height="534" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADhCAMAAADmr0l2AAAAMFBMVEX29vb///8AI33eERjcAAD2+fnxz9HeAAzkUlcAAHYAF3lueqrxsLDnhIf3/fzDydsow0GBAAAB9klEQVR4Ae3dO1IcQBQEwZEA8RGS7n9bHaG9jdqJHPsZvZVrEQSc4ymggAIKKKCAAgoooIACCiiggAIKKKCAAgoooIACCiiggAIKKKDAQwr8vfydP5e/83r5Oy+XPx/w2YEJEowX8BWNA815BGei+AHBONCcR3Amih8QjAPNeQRnovgBwTjQnEdwJoof3P9jw+/L3/lx+fMBnx2YIMF4AV/RONCcR3Amih8QjAPNeQRnovgBwTjQnEdwJoofEIwDzXkEZ6L4AcE40Jx3fl/+ztfl7/y8/PmAzw5MkGC8gK9oHGjOIzgTxQ8IxoHmPIIzUfyAYBxoziM4E8UPCMaB5jyCM1H8gGAcaM4jOBPFDwjGgeY8gjNR/IBgHGjOIzgTxQ8IxoHmPIIzUfyAYBxoziM4E8UPCMaB5jyCM1H84H7Bz8vf+Xf580vp87e+4wcE40BzHsGZKH5AMA405xGcieIHBONAcx7BmSh+QDAONOcRnIniBwTjQHMewZkofkAwDjTnnY/L33m//PlD4vG/Ez7nEZyJ4gcE40BzHsGZKH5AMA405xGcieIHBONAcx7BmSh+QDAONOcRnIniBwTjQHPe/f/c7dfl77xd/o6ngAIKKKCAAgoooIACCiiggAIKKKCAAgoooIACCiiggAIKKKCAAg8p8B8oqFqQILnCgAAAAABJRU5ErkJggg=="></image>
+            <g id="矩形" fill-rule="nonzero" mask="url(#mask-3)">
+                <use fill-opacity="0.1" fill="#FFFFFF" xlink:href="#path-4"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+            </g>
+        </g>
+    </g>
+</svg>

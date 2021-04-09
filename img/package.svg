@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;fill:#97F7DC;}
+	.st1{opacity:0.1;fill:#231815;enable-background:new    ;}
+	.st2{fill:#728C9F;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:#5DAFD1;}
+	.st5{fill:#92D0E2;}
+	.st6{fill:#F2F2F2;}
+	.st7{fill:#69B9CF;}
+	.st8{display:none;}
+	.st9{display:inline;}
+	.st10{fill:#E88293;}
+</style>
+<g>
+	<rect class="st0" width="512" height="512"/>
+	<polygon class="st1" points="512,245.8 512,512 236.9,512 184.2,459.3 133.8,408.9 114,389.1 114,175.6 184.2,137.8 184.2,100.1 
+		325.3,59 332.5,66.3 454.8,188.6 	"/>
+	<g>
+		<g>
+			<polygon class="st2" points="262.3,161.4 262.3,218.8 114,175.6 184.2,137.8 			"/>
+			<polygon class="st3" points="410.7,403.1 262.4,446.3 262.4,218.8 410.7,175.6 			"/>
+			<polygon class="st4" points="410.7,403.1 262.4,446.3 262.4,333.8 410.7,290.7 			"/>
+			<polygon class="st5" points="332.5,94.7 184.2,137.9 262.4,218.8 410.7,175.6 			"/>
+			<polygon class="st3" points="332.5,56.9 332.5,94.7 184.2,137.8 184.2,100.1 325.3,59 			"/>
+			<polygon class="st6" points="262.3,218.8 262.3,446.3 133.8,408.9 114,403.1 114,175.6 			"/>
+			<polygon class="st7" points="262.3,333.8 262.3,446.3 133.8,408.9 114,403.1 114,290.7 			"/>
+		</g>
+		<g class="st8">
+			<g class="st9">
+				<path class="st10" d="M306.7,252l-10.2,24.3l-10.3-18.3l-7.6,2.1v39.5l7.7-2.3v-23l7.6,12.7l5.2-1.5l7.5-17.2v23l7.7-2.2v-39.5
+					L306.7,252z"/>
+				<path class="st10" d="M323.5,247.1v39.5l7.7-2.3v-39.5L323.5,247.1z"/>
+				<path class="st10" d="M348.1,272.5V240l-7.7,2.2v39.5l25.6-7.4v-6.9L348.1,272.5z"/>
+				<path class="st10" d="M385.8,244.8l13.1-19.5l-9.4,2.7l-13.9,21.2V232l-7.7,2.2v39.5l7.7-2.2v-11.9l5.1-7.6l10.1,15.1l9-2.6
+					L385.8,244.8z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

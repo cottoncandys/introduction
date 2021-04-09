@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>travel</title>
+    <desc>Created with Sketch.</desc>
+    <g id="travel" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="群組-3" fill-rule="nonzero">
+            <rect id="Mask" fill="#A2D7EF" x="0" y="0" width="512" height="512" rx="12"></rect>
+            <g id="群組" transform="translate(32.000000, 81.000000)">
+                <polygon id="路徑-6" fill="#FFFFFF" points="0 113.766577 127.021497 188 431 0"></polygon>
+                <polygon id="路徑-6" fill="#FFFFFF" transform="translate(320.797966, 178.109046) scale(-1, 1) rotate(-79.000000) translate(-320.797966, -178.109046) " points="166.988824 195.187282 310.254984 320.271167 474.607107 35.9469252"></polygon>
+                <polygon id="路徑-7" fill="#DCEFFB" points="139.101254 332 126 188 430 1 184.93033 215.844484"></polygon>
+                <polygon id="路徑-9" fill="#BFE0EF" points="138 332 240 260 184 216"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

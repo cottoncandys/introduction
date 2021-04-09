@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>movie</title>
+    <desc>Created with Sketch.</desc>
+    <g id="movie" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="群組-8" transform="translate(0.000000, -1.000000)" fill-rule="nonzero">
+            <rect id="Mask" fill="#DDDF7D" x="0" y="0" width="512" height="512" rx="12"></rect>
+            <g id="群組" transform="translate(42.000000, 32.000000)">
+                <g id="群組-7" transform="translate(168.000000, 0.000000)">
+                    <circle id="橢圓形" fill="#B7495E" transform="translate(124.000000, 124.000000) rotate(43.000000) translate(-124.000000, -124.000000) " cx="124" cy="124" r="87.2302158"></circle>
+                    <circle id="橢圓形" fill="#F9EEE2" transform="translate(124.044384, 125.271000) rotate(43.000000) translate(-124.044384, -125.271000) " cx="124.044384" cy="125.271" r="46.7625899"></circle>
+                    <path d="M116.074808,240.95182 C163.191768,242.066668 200.538777,203.921466 199.491688,155.752128 C198.444599,107.58279 159.399922,67.6300636 112.282963,66.5152162" id="路徑" fill="#A1354C" transform="translate(155.898071, 153.745432) rotate(43.000000) translate(-155.898071, -153.745432) "></path>
+                    <path d="M118.480444,186.740205 C143.73902,187.337856 163.760097,166.888882 163.198771,141.066144 C162.637445,115.243406 141.706278,93.8254493 116.447702,93.2277992 L118.480444,186.740205 Z" id="路徑" fill="#ECD7C0" transform="translate(139.828997, 139.990389) rotate(43.000000) translate(-139.828997, -139.990389) "></path>
+                </g>
+                <g id="群組-7" transform="translate(0.000000, 35.000000)">
+                    <circle id="橢圓形" fill="#B7495E" transform="translate(124.000000, 124.000000) rotate(43.000000) translate(-124.000000, -124.000000) " cx="124" cy="124" r="87.2302158"></circle>
+                    <circle id="橢圓形" fill="#F9EEE2" transform="translate(124.044384, 125.271000) rotate(43.000000) translate(-124.044384, -125.271000) " cx="124.044384" cy="125.271" r="46.7625899"></circle>
+                    <path d="M116.074808,240.95182 C163.191768,242.066668 200.538777,203.921466 199.491688,155.752128 C198.444599,107.58279 159.399922,67.6300636 112.282963,66.5152162" id="路徑" fill="#A1354C" transform="translate(155.898071, 153.745432) rotate(43.000000) translate(-155.898071, -153.745432) "></path>
+                    <path d="M118.480444,186.740205 C143.73902,187.337856 163.760097,166.888882 163.198771,141.066144 C162.637445,115.243406 141.706278,93.8254493 116.447702,93.2277992 L118.480444,186.740205 Z" id="路徑" fill="#ECD7C0" transform="translate(139.828997, 139.990389) rotate(43.000000) translate(-139.828997, -139.990389) "></path>
+                </g>
+                <polygon id="路徑-12" fill="#ED7D63" points="417 254 336 303.169098 336 337 417 337"></polygon>
+                <polygon id="路徑-12" fill="#DA664D" transform="translate(376.500000, 376.500000) scale(1, -1) translate(-376.500000, -376.500000) " points="417 336 336 385.169098 336 417 417 417"></polygon>
+                <polygon id="矩形" fill="#D85E44" points="417 254 429 254 429 417 417 417"></polygon>
+                <rect id="矩形" fill="#DA664D" x="43" y="316" width="81" height="69"></rect>
+                <rect id="矩形" fill="#ED7A61" x="43" y="323" width="81" height="13"></rect>
+                <rect id="矩形" fill="#DA664D" x="292" y="292" width="56" height="88"></rect>
+                <rect id="矩形" fill="#ED7D63" x="292" y="292" width="56" height="44"></rect>
+                <rect id="矩形" fill="#A1354C" x="105" y="248" width="212" height="163"></rect>
+                <rect id="矩形" fill="#B7495E" x="105" y="248" width="212" height="88"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
