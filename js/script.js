@@ -85,7 +85,7 @@ $(document).ready(function() {
 
       if ($(window).scrollTop() >= $(".p00").offset().top && $(window).scrollTop() < $(".p01").offset().top) {
           $(".nav li:eq(0)").addClass("active");
-      } else if ($(window).scrollTop() >= $(".p01").offset().top && $(window).scrollTop() < $(".p02").offset().top) {
+      } else if ($(window).scrollTop() + 10 >= $(".p01").offset().top && $(window).scrollTop() < $(".p02").offset().top) {
           $(".nav li:eq(1)").addClass("active");
           $(".nav li:eq(1) .slider").css("visibility", "visible");
       } else if ($(window).scrollTop() >= $(".p02").offset().top && $(window).scrollTop() < $(".p03").offset().top) {
@@ -150,7 +150,7 @@ $(document).ready(function() {
 
 /*******************************  bar chart *********************************/
 
-let values = [50,200,150,100,25,50,200,150,100,25,50,200,150,100,25];
+let values = [50,200,150,100,25,50,200,150,100,25,50,200,200,100,25];
 
 drawChart(values,"#chart",15) 
 
