@@ -7268,8 +7268,8 @@ button.close {
   border-radius: 100%;
   opacity: 1;
   position: absolute;
-  top: -15px;
-  right: -10px;
+  top: -1.5rem;
+  right: -1.5rem;
   z-index: 200;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7285,18 +7285,8 @@ button.close {
 
 @media (min-width: 1200px) {
   button.close {
-    width: 8rem;
-    height: 8rem;
-    top: -20px;
-    right: -15px;
-  }
-}
-
-@media (min-width: 1280px) {
-  button.close {
     width: 7rem;
     height: 7rem;
-    right: -6px;
   }
 }
 
@@ -17455,7 +17445,7 @@ button.close:focus, button.close:hover {
   background: #82befd;
   -webkit-box-shadow: 0px 0px #82befd, 1px -1px #73a8e1, 2px -2px #73a8e1, 3px -3px #73a8e1, 4px -4px #73a8e1, 5px -5px #73a8e1, 6px -6px #73a8e1, 7px -7px #73a8e1, 8px -8px #73a8e1, 9px -9px #73a8e1, 10px -10px #73a8e1, 11px -11px #73a8e1, 12px -12px #73a8e1, 13px -13px #73a8e1, 14px -14px #73a8e1, 15px -15px #73a8e1, 16px -16px #73a8e1, 17px -17px #73a8e1, 18px -18px #73a8e1, 19px -19px #73a8e1, 20px -20px #73a8e1, 21px -21px #73a8e1, 22px -22px #73a8e1, 23px -23px #73a8e1, 24px -24px #73a8e1, 25px -25px #73a8e1, 26px -26px #73a8e1, 27px -27px #73a8e1, 28px -28px #73a8e1, 29px -29px #73a8e1, 30px -30px #73a8e1;
           box-shadow: 0px 0px #82befd, 1px -1px #73a8e1, 2px -2px #73a8e1, 3px -3px #73a8e1, 4px -4px #73a8e1, 5px -5px #73a8e1, 6px -6px #73a8e1, 7px -7px #73a8e1, 8px -8px #73a8e1, 9px -9px #73a8e1, 10px -10px #73a8e1, 11px -11px #73a8e1, 12px -12px #73a8e1, 13px -13px #73a8e1, 14px -14px #73a8e1, 15px -15px #73a8e1, 16px -16px #73a8e1, 17px -17px #73a8e1, 18px -18px #73a8e1, 19px -19px #73a8e1, 20px -20px #73a8e1, 21px -21px #73a8e1, 22px -22px #73a8e1, 23px -23px #73a8e1, 24px -24px #73a8e1, 25px -25px #73a8e1, 26px -26px #73a8e1, 27px -27px #73a8e1, 28px -28px #73a8e1, 29px -29px #73a8e1, 30px -30px #73a8e1;
-  height: 52.5%;
+  height: 62.5%;
   width: 30px;
   -webkit-transform: skew(0deg, 25deg);
           transform: skew(0deg, 25deg);
@@ -17525,7 +17515,7 @@ button.close:focus, button.close:hover {
   background: #b4d8fe;
   -webkit-box-shadow: 0px 0px #b4d8fe, 1px -1px #a0c0e2, 2px -2px #a0c0e2, 3px -3px #a0c0e2, 4px -4px #a0c0e2, 5px -5px #a0c0e2, 6px -6px #a0c0e2, 7px -7px #a0c0e2, 8px -8px #a0c0e2, 9px -9px #a0c0e2, 10px -10px #a0c0e2, 11px -11px #a0c0e2, 12px -12px #a0c0e2, 13px -13px #a0c0e2, 14px -14px #a0c0e2, 15px -15px #a0c0e2, 16px -16px #a0c0e2, 17px -17px #a0c0e2, 18px -18px #a0c0e2, 19px -19px #a0c0e2, 20px -20px #a0c0e2, 21px -21px #a0c0e2, 22px -22px #a0c0e2, 23px -23px #a0c0e2, 24px -24px #a0c0e2, 25px -25px #a0c0e2, 26px -26px #a0c0e2, 27px -27px #a0c0e2, 28px -28px #a0c0e2, 29px -29px #a0c0e2, 30px -30px #a0c0e2;
           box-shadow: 0px 0px #b4d8fe, 1px -1px #a0c0e2, 2px -2px #a0c0e2, 3px -3px #a0c0e2, 4px -4px #a0c0e2, 5px -5px #a0c0e2, 6px -6px #a0c0e2, 7px -7px #a0c0e2, 8px -8px #a0c0e2, 9px -9px #a0c0e2, 10px -10px #a0c0e2, 11px -11px #a0c0e2, 12px -12px #a0c0e2, 13px -13px #a0c0e2, 14px -14px #a0c0e2, 15px -15px #a0c0e2, 16px -16px #a0c0e2, 17px -17px #a0c0e2, 18px -18px #a0c0e2, 19px -19px #a0c0e2, 20px -20px #a0c0e2, 21px -21px #a0c0e2, 22px -22px #a0c0e2, 23px -23px #a0c0e2, 24px -24px #a0c0e2, 25px -25px #a0c0e2, 26px -26px #a0c0e2, 27px -27px #a0c0e2, 28px -28px #a0c0e2, 29px -29px #a0c0e2, 30px -30px #a0c0e2;
-  height: 27.5%;
+  height: 50%;
   width: 30px;
   -webkit-transform: skew(0deg, 25deg);
           transform: skew(0deg, 25deg);
@@ -17536,7 +17526,7 @@ button.close:focus, button.close:hover {
     background: #b4d8fe;
     -webkit-box-shadow: 0px 0px #b4d8fe, 1px -1px #a0c0e2, 2px -2px #a0c0e2, 3px -3px #a0c0e2, 4px -4px #a0c0e2, 5px -5px #a0c0e2, 6px -6px #a0c0e2, 7px -7px #a0c0e2, 8px -8px #a0c0e2, 9px -9px #a0c0e2, 10px -10px #a0c0e2, 11px -11px #a0c0e2, 12px -12px #a0c0e2, 13px -13px #a0c0e2, 14px -14px #a0c0e2, 15px -15px #a0c0e2;
             box-shadow: 0px 0px #b4d8fe, 1px -1px #a0c0e2, 2px -2px #a0c0e2, 3px -3px #a0c0e2, 4px -4px #a0c0e2, 5px -5px #a0c0e2, 6px -6px #a0c0e2, 7px -7px #a0c0e2, 8px -8px #a0c0e2, 9px -9px #a0c0e2, 10px -10px #a0c0e2, 11px -11px #a0c0e2, 12px -12px #a0c0e2, 13px -13px #a0c0e2, 14px -14px #a0c0e2, 15px -15px #a0c0e2;
-    height: 27.5%;
+    height: 50%;
     width: 15px;
     -webkit-transform: skew(0deg, 25deg);
             transform: skew(0deg, 25deg);
@@ -17548,7 +17538,7 @@ button.close:focus, button.close:hover {
     background: #b4d8fe;
     -webkit-box-shadow: 0px 0px #b4d8fe, 1px -1px #a0c0e2, 2px -2px #a0c0e2, 3px -3px #a0c0e2, 4px -4px #a0c0e2, 5px -5px #a0c0e2, 6px -6px #a0c0e2, 7px -7px #a0c0e2, 8px -8px #a0c0e2, 9px -9px #a0c0e2, 10px -10px #a0c0e2, 11px -11px #a0c0e2, 12px -12px #a0c0e2, 13px -13px #a0c0e2, 14px -14px #a0c0e2, 15px -15px #a0c0e2, 16px -16px #a0c0e2, 17px -17px #a0c0e2, 18px -18px #a0c0e2, 19px -19px #a0c0e2, 20px -20px #a0c0e2;
             box-shadow: 0px 0px #b4d8fe, 1px -1px #a0c0e2, 2px -2px #a0c0e2, 3px -3px #a0c0e2, 4px -4px #a0c0e2, 5px -5px #a0c0e2, 6px -6px #a0c0e2, 7px -7px #a0c0e2, 8px -8px #a0c0e2, 9px -9px #a0c0e2, 10px -10px #a0c0e2, 11px -11px #a0c0e2, 12px -12px #a0c0e2, 13px -13px #a0c0e2, 14px -14px #a0c0e2, 15px -15px #a0c0e2, 16px -16px #a0c0e2, 17px -17px #a0c0e2, 18px -18px #a0c0e2, 19px -19px #a0c0e2, 20px -20px #a0c0e2;
-    height: 27.5%;
+    height: 50%;
     width: 20px;
     -webkit-transform: skew(0deg, 25deg);
             transform: skew(0deg, 25deg);
@@ -17560,7 +17550,7 @@ button.close:focus, button.close:hover {
     background: #b4d8fe;
     -webkit-box-shadow: 0px 0px #b4d8fe, 1px -1px #a0c0e2, 2px -2px #a0c0e2, 3px -3px #a0c0e2, 4px -4px #a0c0e2, 5px -5px #a0c0e2, 6px -6px #a0c0e2, 7px -7px #a0c0e2, 8px -8px #a0c0e2, 9px -9px #a0c0e2, 10px -10px #a0c0e2, 11px -11px #a0c0e2, 12px -12px #a0c0e2, 13px -13px #a0c0e2, 14px -14px #a0c0e2, 15px -15px #a0c0e2, 16px -16px #a0c0e2, 17px -17px #a0c0e2, 18px -18px #a0c0e2, 19px -19px #a0c0e2, 20px -20px #a0c0e2, 21px -21px #a0c0e2, 22px -22px #a0c0e2, 23px -23px #a0c0e2, 24px -24px #a0c0e2, 25px -25px #a0c0e2, 26px -26px #a0c0e2, 27px -27px #a0c0e2, 28px -28px #a0c0e2, 29px -29px #a0c0e2, 30px -30px #a0c0e2;
             box-shadow: 0px 0px #b4d8fe, 1px -1px #a0c0e2, 2px -2px #a0c0e2, 3px -3px #a0c0e2, 4px -4px #a0c0e2, 5px -5px #a0c0e2, 6px -6px #a0c0e2, 7px -7px #a0c0e2, 8px -8px #a0c0e2, 9px -9px #a0c0e2, 10px -10px #a0c0e2, 11px -11px #a0c0e2, 12px -12px #a0c0e2, 13px -13px #a0c0e2, 14px -14px #a0c0e2, 15px -15px #a0c0e2, 16px -16px #a0c0e2, 17px -17px #a0c0e2, 18px -18px #a0c0e2, 19px -19px #a0c0e2, 20px -20px #a0c0e2, 21px -21px #a0c0e2, 22px -22px #a0c0e2, 23px -23px #a0c0e2, 24px -24px #a0c0e2, 25px -25px #a0c0e2, 26px -26px #a0c0e2, 27px -27px #a0c0e2, 28px -28px #a0c0e2, 29px -29px #a0c0e2, 30px -30px #a0c0e2;
-    height: 27.5%;
+    height: 50%;
     width: 30px;
     -webkit-transform: skew(0deg, 25deg);
             transform: skew(0deg, 25deg);
@@ -17572,7 +17562,7 @@ button.close:focus, button.close:hover {
     background: #b4d8fe;
     -webkit-box-shadow: 0px 0px #b4d8fe, 1px -1px #a0c0e2, 2px -2px #a0c0e2, 3px -3px #a0c0e2, 4px -4px #a0c0e2, 5px -5px #a0c0e2, 6px -6px #a0c0e2, 7px -7px #a0c0e2, 8px -8px #a0c0e2, 9px -9px #a0c0e2, 10px -10px #a0c0e2, 11px -11px #a0c0e2, 12px -12px #a0c0e2, 13px -13px #a0c0e2, 14px -14px #a0c0e2, 15px -15px #a0c0e2;
             box-shadow: 0px 0px #b4d8fe, 1px -1px #a0c0e2, 2px -2px #a0c0e2, 3px -3px #a0c0e2, 4px -4px #a0c0e2, 5px -5px #a0c0e2, 6px -6px #a0c0e2, 7px -7px #a0c0e2, 8px -8px #a0c0e2, 9px -9px #a0c0e2, 10px -10px #a0c0e2, 11px -11px #a0c0e2, 12px -12px #a0c0e2, 13px -13px #a0c0e2, 14px -14px #a0c0e2, 15px -15px #a0c0e2;
-    height: 27.5%;
+    height: 50%;
     width: 15px;
     -webkit-transform: skew(0deg, 25deg);
             transform: skew(0deg, 25deg);
@@ -17584,7 +17574,7 @@ button.close:focus, button.close:hover {
     background: #b4d8fe;
     -webkit-box-shadow: 0px 0px #b4d8fe, 1px -1px #a0c0e2, 2px -2px #a0c0e2, 3px -3px #a0c0e2, 4px -4px #a0c0e2, 5px -5px #a0c0e2, 6px -6px #a0c0e2, 7px -7px #a0c0e2, 8px -8px #a0c0e2, 9px -9px #a0c0e2, 10px -10px #a0c0e2;
             box-shadow: 0px 0px #b4d8fe, 1px -1px #a0c0e2, 2px -2px #a0c0e2, 3px -3px #a0c0e2, 4px -4px #a0c0e2, 5px -5px #a0c0e2, 6px -6px #a0c0e2, 7px -7px #a0c0e2, 8px -8px #a0c0e2, 9px -9px #a0c0e2, 10px -10px #a0c0e2;
-    height: 27.5%;
+    height: 50%;
     width: 10px;
     -webkit-transform: skew(0deg, 25deg);
             transform: skew(0deg, 25deg);
