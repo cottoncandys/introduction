@@ -7630,7 +7630,7 @@ button.close:focus, button.close:hover {
 
 @media (min-width: 1280px) {
   #aboutMeModal .modal-dialog .modal-content .modal-body .info h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -7838,9 +7838,9 @@ button.close:focus, button.close:hover {
 
 @media (min-width: 768px) {
   #aboutMeModal .modal-dialog .modal-content .modal-body .info ul li {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1;
-    margin: .5em 0;
+    margin: .4em 0;
   }
 }
 
@@ -7848,19 +7848,13 @@ button.close:focus, button.close:hover {
   #aboutMeModal .modal-dialog .modal-content .modal-body .info ul li {
     font-size: 1.3rem;
     line-height: 1;
-    margin: .5em 0;
+    margin: .4em 0;
   }
 }
 
 @media (min-width: 1200px) {
   #aboutMeModal .modal-dialog .modal-content .modal-body .info ul li {
-    font-size: 2.5rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  #aboutMeModal .modal-dialog .modal-content .modal-body .info ul li {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -7958,17 +7952,9 @@ button.close:focus, button.close:hover {
 
 @media (min-width: 1200px) {
   #aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline li {
-    -ms-flex-preferred-size: 18%;
-        flex-basis: 18%;
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%;
     margin-right: 2%;
-  }
-}
-
-@media (min-width: 1280px) {
-  #aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline li {
-    -ms-flex-preferred-size: 16%;
-        flex-basis: 16%;
-    margin-right: 4%;
   }
 }
 
@@ -8081,7 +8067,7 @@ button.close:focus, button.close:hover {
 
 @media (min-width: 1280px) {
   #aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline li span {
-    font-size: 1.6rem;
+    font-size: 1rem;
     line-height: 1.4;
   }
 }
