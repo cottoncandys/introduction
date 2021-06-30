@@ -7906,7 +7906,7 @@ button.close:focus, button.close:hover {
       flex-wrap: wrap;
 }
 
-#aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline.languages {
+#aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline.languages, #aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline.certified {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -8015,6 +8015,24 @@ button.close:focus, button.close:hover {
     -ms-flex-preferred-size: 16%;
         flex-basis: 16%;
   }
+}
+
+#aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline li.imgzoom img {
+  border-radius: 0;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+#aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline li.imgzoom:active img, #aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline li.imgzoom:focus img, #aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline li.imgzoom:hover img {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  margin: 0 auto;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 #aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline li img {
