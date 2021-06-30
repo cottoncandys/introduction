@@ -19,7 +19,7 @@ $(document).ready(function () {
    
     // let ids = document.getElementsById("[id^=tArticle]");
     // for (var i = 0; i < ids.length; i++) {
-    
+
     // // if ($('.tab-pane').hasClass('active')){
     // if (idss > 0) {
     //     // var ids = idss.attr("id").split("tArticle")[1];

@@ -44,7 +44,7 @@ $(document).ready(function() {
 
   //  4.點選導覽列 會到指定圖片
   let num_li = $(".nav li").length;
-  for (var i = 0; i <= num_li; i++) {
+  for (var i = 0; i < num_li; i++) {
     //   $("html,body").stop();
       $(".nav li:eq(" + i + ") ").click({//自命名變數i,e
           id: i
@@ -63,10 +63,10 @@ $(document).ready(function() {
       })
       
     }
-    $(".nav li:eq(4)").click(function(){
-        $("#tab2").addClass("active");
-        // $("#tab2.active").find("#web").addClass("active");
-    })
+    // $(".nav li:eq(6)").click(function(){
+    //     $("#tab1").addClass("active");
+    //     // $("#tab2.active").find("#web").addClass("active");
+    // })
   //  2.一進入網頁時，nav垂直置中
   center();
   //  3.縮放allpage，重新nav置中
@@ -97,11 +97,11 @@ $(document).ready(function() {
       } else if ($(window).scrollTop() >= $(".p04").offset().top && $(window).scrollTop() < $(".p05").offset().top) {
           $(".nav li:eq(4)").addClass("active");
           $(".nav li:eq(4) .slider").css("visibility", "visible");
-          $("#tab2").addClass("active");
+          $("#tab1").addClass("active");
       } else if ($(window).scrollTop() >= $(".p05").offset().top && $(window).scrollTop() < $(".p06").offset().top) {
           $(".nav li:eq(5)").addClass("active");
           $(".nav li:eq(5) .slider").css("visibility", "visible");
-          $("#tab2").addClass("active");
+          $("#tab1").addClass("active");
           //   $("#tab2").hasClass("active").find("#web").addClass("active");
       } else if ($(window).scrollTop() >= $(".p06").offset().top) {
           $(".nav li:eq(6)").addClass("active");
