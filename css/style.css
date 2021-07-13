@@ -176,37 +176,31 @@
 }
 
 .fa-rotate-90 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
 .fa-rotate-180 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
 .fa-rotate-270 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
 }
 
 .fa-flip-horizontal {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
 }
 
 .fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(1, -1);
           transform: scale(1, -1);
 }
 
 .fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(-1, -1);
           transform: scale(-1, -1);
 }
@@ -6999,16 +6993,16 @@ body {
   border-bottom-color: rgba(3, 128, 173, 0.7);
   left: 50%;
   top: 100%;
-  -webkit-transform: translate(-50%, calc($balloon-move * -1));
-          transform: translate(-50%, calc($balloon-move * -1));
+  -webkit-transform: translate(-50%, calc(-4px));
+          transform: translate(-50%, calc(-4px));
 }
 
 [aria-label][data-balloon-pos="down"]:after {
   left: 50%;
   margin-top: 10px;
   top: 100%;
-  -webkit-transform: translate(-50%, calc($balloon-move * -1));
-          transform: translate(-50%, calc($balloon-move * -1));
+  -webkit-transform: translate(-50%, calc(-4px));
+          transform: translate(-50%, calc(-4px));
 }
 
 [aria-label][data-balloon-pos="left"]:before {
@@ -7357,9 +7351,14 @@ button.close:focus, button.close:hover {
           box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1400px) {
   #aboutMeModal .modal-dialog .modal-content {
     top: 6.5rem;
+  }
+}
+@media (min-width: 1920px) {
+  #aboutMeModal .modal-dialog .modal-content {
+    top: 0;
   }
 }
 
@@ -7795,6 +7794,11 @@ button.close:focus, button.close:hover {
     padding: 2em;
   }
 }
+@media (min-width: 1920px) {
+  #aboutMeModal .modal-dialog .modal-content .modal-body .info ul.padL01 {
+    padding: 1em;
+  }
+}
 
 @media (max-width: 480px) {
   #aboutMeModal .modal-dialog .modal-content .modal-body .info ul.padL01 {
@@ -7965,6 +7969,13 @@ button.close:focus, button.close:hover {
     margin-right: 5%;
   }
 }
+@media (min-width: 2560px) {
+  #aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline li {
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%;
+    margin-right: 4%;
+  }
+}
 
 @media (max-width: 576px) {
   #aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline li {
@@ -8017,22 +8028,31 @@ button.close:focus, button.close:hover {
   }
 }
 
-#aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline li.imgzoom img {
-  border-radius: 0;
+
+
+#aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline li span.imgzoom {
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
+    display: none; 
+    position: fixed; 
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.6);
+    
 }
-
-#aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline li.imgzoom:active img, #aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline li.imgzoom:focus img, #aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline li.imgzoom:hover img {
-  position: absolute;
-  top: 10%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  margin: 0 auto;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+#aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline.certified li img{
+  border-radius: 0;
+}
+#aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline li span.imgzoom img {
+    max-width: 80%;
+    max-height: 90%;
+    margin:0 auto;
+}
+#aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline li span.imgzoom:target { 
+    display: flex;
 }
 
 #aboutMeModal .modal-dialog .modal-content .modal-body .info ul li ul.box-inline li img {
@@ -8710,6 +8730,11 @@ button.close:focus, button.close:hover {
             transform: translate(0, 25%);
   }
 }
+@media (min-width: 2560px) {
+  .brand .section-title.brand svg text {
+    font-size: 6rem;
+  }
+}
 
 @media (max-width: 767px) {
   .brand .section-title.brand svg text {
@@ -9154,7 +9179,11 @@ button.close:focus, button.close:hover {
             transform: translate(0, 25%);
   }
 }
-
+@media (min-width: 2560px) {
+  .skills .section-title.skills svg text {
+    font-size: 6rem;
+  }
+}
 @media (max-width: 767px) {
   .skills .section-title.skills svg text {
     font-size: 2rem;
@@ -9598,6 +9627,11 @@ button.close:focus, button.close:hover {
             transform: translate(0, 25%);
   }
 }
+@media (min-width: 2560px) {
+  .works .section-title.works svg text {
+    font-size: 6rem;
+  }
+}
 
 @media (max-width: 767px) {
   .works .section-title.works svg text {
@@ -10034,7 +10068,6 @@ button.close:focus, button.close:hover {
     font-size: 3.5rem;
   }
 }
-
 @media (min-width: 1920px) {
   .experience .section-title.experience svg text {
     font-size: 4.5rem;
@@ -10042,7 +10075,16 @@ button.close:focus, button.close:hover {
             transform: translate(0, 25%);
   }
 }
-
+@media (min-width: 2560px) {
+  .experience .section-title.experience svg text {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 3440px) {
+  .experience .section-title.experience svg text {
+    font-size: 8rem;
+  }
+}
 @media (max-width: 767px) {
   .experience .section-title.experience svg text {
     font-size: 2rem;
@@ -10585,9 +10627,7 @@ button.close:focus, button.close:hover {
 /*                   p00     首頁的svg圖                         */
 /*                                                           */
 /*************************************************************/
-.container-fluid {
-  /*----------  亂飛三角型  ----------*/
-}
+
 
 .container-fluid.r {
   position: relative;
@@ -12679,7 +12719,11 @@ button.close:focus, button.close:hover {
     height: 11rem;
   }
 }
-
+@media (min-width:2560px){
+   .titleIndex svg {
+    height: 16rem;
+  }
+}
 @media (max-width: 736px) {
   .titleIndex svg {
     width: 37%;
@@ -12757,9 +12801,6 @@ button.close:focus, button.close:hover {
   font-size: calc(2vw + 1vh + 4vmin);
   font-family: 'Brandon Grotesque Light';
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.58);
-  /*----*/
-  /* nokia */
-  /* iPhone 5 */
 }
 
 @media (min-width: 768px) {
@@ -12810,7 +12851,11 @@ button.close:focus, button.close:hover {
     stroke-width: 6px;
   }
 }
-
+@media (min-width: 2560px) {
+  .titleIndex svg text {
+    stroke-width: 10px;
+  }
+}
 @media (max-width: 736px) {
   .titleIndex svg text {
     stroke-width: 4px;
@@ -13216,7 +13261,11 @@ button.close:focus, button.close:hover {
   white-space: nowrap;
   line-height: 2;
   letter-spacing: 0.2rem;
+  top: 0;
 }
+
+
+
 
 @media (max-width: 576px) {
   .p01 .drawbrand .brand .title2 {
@@ -13247,12 +13296,6 @@ button.close:focus, button.close:hover {
   }
 }
 
-@media (min-width: 1920px) {
-  .p01 .drawbrand {
-    margin-top: 0;
-  }
-}
-
 @media (max-width: 375px) {
   .p01 .drawbrand {
     padding: 0 4% 0 8%;
@@ -13274,10 +13317,6 @@ button.close:focus, button.close:hover {
       -ms-flex-align: center;
           align-items: center;
   height: calc(100vh - 192px);
-  /*----*/
-  /* iPhone X */
-  /* iPhone 4 */
-  /* iPhone 5 */
 }
 
 @media (min-width: 768px) {
@@ -13324,7 +13363,12 @@ button.close:focus, button.close:hover {
 
 @media (min-width: 1920px) {
   .p01 .drawbrand .brand {
-    height: calc(100vh - 300px);
+    height: calc(100vh - 350px);
+  }
+}
+@media (min-width: 2560px) {
+  .p01 .drawbrand .brand {
+    height: calc(100vh - 400px);
   }
 }
 
@@ -13369,22 +13413,25 @@ button.close:focus, button.close:hover {
     height: calc(100vh - 100px);
   }
 }
-
 @media (min-width: 376px) and (max-width: 414px) {
   .p01 .drawbrand .brand {
     height: calc(100vh - 200px);
   }
 }
-
 @media (max-width: 375px) {
   .p01 .drawbrand .brand {
-    height: calc(100vh - 160px);
+    height: calc(100vh - 300px);
   }
 }
-
-@media (max-width: 372px) {
+@media (max-width: 360px) {
   .p01 .drawbrand .brand {
-    height: calc(100vh - 140px);
+    height: calc(100vh - 112px);
+  }
+}
+/* iphone 6, 6s, 7, 8 */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2){
+  .p01 .drawbrand .brand {
+    height: calc(100vh - 163px);
   }
 }
 
@@ -13413,134 +13460,122 @@ button.close:focus, button.close:hover {
   display: flex;
 }
 
-.p01 .drawbrand .brand .count {
+.p01 .drawbrand .brand .mycount {
   font-family: "skia";
   font-weight: 500;
   font-size: 3rem;
   position: absolute;
   top: 35%;
-  /*----*/
-  /* iPhone 4 */
-  /* iPhone 5 */
 }
 
 @media (min-width: 768px) {
-  .p01 .drawbrand .brand .count {
+  .p01 .drawbrand .brand .mycount {
     font-size: 4.8rem;
     top: 61%;
   }
 }
 
 @media (min-width: 812px) {
-  .p01 .drawbrand .brand .count {
+  .p01 .drawbrand .brand .mycount {
     font-size: 2.5rem;
     top: 47%;
   }
 }
 
 @media (min-width: 992px) {
-  .p01 .drawbrand .brand .count {
+  .p01 .drawbrand .brand .mycount {
     top: 48%;
   }
 }
 
 @media (min-width: 1200px) {
-  .p01 .drawbrand .brand .count {
+  .p01 .drawbrand .brand .mycount {
     top: 47%;
     font-size: 4rem;
   }
 }
 
 @media (max-width: 767px) {
-  .p01 .drawbrand .brand .count {
+  .p01 .drawbrand .brand .mycount {
     top: 46%;
   }
 }
 
 @media (max-width: 736px) {
-  .p01 .drawbrand .brand .count {
+  .p01 .drawbrand .brand .mycount {
     font-size: 2rem;
   }
 }
 
 @media (max-width: 720px) {
-  .p01 .drawbrand .brand .count {
+  .p01 .drawbrand .brand .mycount {
     top: 60%;
     font-size: 4rem;
   }
 }
 
 @media (min-width: 600px) and (max-width: 719px) {
-  .p01 .drawbrand .brand .count {
+  .p01 .drawbrand .brand .mycount {
     top: 45%;
     font-size: 2rem;
   }
 }
 
 @media (max-width: 600px) {
-  .p01 .drawbrand .brand .count {
+  .p01 .drawbrand .brand .mycount {
     top: 60%;
     font-size: 3.5rem;
   }
 }
 
 @media (max-width: 576px) {
-  .p01 .drawbrand .brand .count {
+  .p01 .drawbrand .brand .mycount {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 576px) and (orientation: landscape) {
-  .p01 .drawbrand .brand .count {
+  .p01 .drawbrand .brand .mycount {
     top: 48%;
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
-  .p01 .drawbrand .brand .count {
+  .p01 .drawbrand .brand .mycount {
     top: 56%;
     font-size: 1.8rem;
   }
 }
 
 @media (max-width: 414px) {
-  .p01 .drawbrand .brand .count {
+  .p01 .drawbrand .brand .mycount {
     top: 56%;
     font-size: 2.5rem;
   }
 }
 
 @media (max-width: 375px) {
-  .p01 .drawbrand .brand .count {
-    top: 62%;
+  .p01 .drawbrand .brand .mycount {
+    top: 60%;
     font-size: 2rem;
   }
 }
 
-@media (min-width: 322px) and (max-width: 372px) {
-  .p01 .drawbrand .brand .count {
-    top: 60%;
-  }
-}
-
 @media only screen and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {
-  .p01 .drawbrand .brand .count {
+  .p01 .drawbrand .brand .mycount {
     top: 65%;
     font-size: 1.5rem;
   }
 }
 
 @media only screen and (device-aspect-ratio: 40 / 71) and (orientation: portrait) {
-  .p01 .drawbrand .brand .count {
+  .p01 .drawbrand .brand .mycount {
     top: 62%;
     font-size: 2rem;
   }
 }
 
-.p01 .drawbrand .brand .title2 {
-  top: 0;
-}
 
 @media (min-width: 768px) {
   .p01 .drawbrand .brand .title2 h2 {
@@ -13563,6 +13598,7 @@ button.close:focus, button.close:hover {
 @media (min-width: 1920px) {
   .p01 .drawbrand .brand .title2 h2 {
     font-size: 4.8rem;
+    line-height:1.5;
   }
 }
 
@@ -13718,9 +13754,6 @@ button.close:focus, button.close:hover {
   right: -21.5%;
   height: 99%;
   top: 2.5%;
-  /* iPhone X */
-  /* iPhone 4 */
-  /* iPhone 5 */
 }
 
 @media (min-width: 768px) {
@@ -13777,12 +13810,6 @@ button.close:focus, button.close:hover {
   }
 }
 
-@media (min-width: 1366px) {
-  .p01 .drawbrand .brand.L svg {
-    right: -35.5%;
-  }
-}
-
 @media (min-width: 1440px) {
   .p01 .drawbrand .brand.L svg {
     right: -25%;
@@ -13792,6 +13819,17 @@ button.close:focus, button.close:hover {
 @media (min-width: 1920px) {
   .p01 .drawbrand .brand.L svg {
     right: -37%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .p01 .drawbrand .brand.L svg {  
+    right: -52%;                    
+  }
+}
+@media (min-width:3440px){
+.p01 .drawbrand .brand.L svg {  
+    right: -57%;                    
   }
 }
 
@@ -13882,35 +13920,17 @@ button.close:focus, button.close:hover {
     top: 30.5%;
   }
 }
-
-@media (max-width: 384px) {
-  .p01 .drawbrand .brand.L svg {
-    right: -40%;
-    top: 34%;
-  }
-}
-
 @media (max-width: 375px) {
   .p01 .drawbrand .brand.L svg {
-    right: -51%;
-    height: 68%;
-    top: 30.5%;
+    right: -50%;
+    height: 66%;
   }
 }
-
-@media (min-width: 322px) and (max-width: 372px) {
-  .p01 .drawbrand .brand.L svg {
-    right: -49%;
-    height: 64%;
-    top: 31%;
-  }
-}
-
-@media (max-width: 320px) {
-  .p01 .drawbrand .brand.L svg {
+@media (max-width: 360px) {
+.p01 .drawbrand .brand.L svg {
     right: -44%;
-    height: 65%;
-    top: 32%;
+    height: 55%;
+    top: 31%;
   }
 }
 
@@ -14683,97 +14703,97 @@ button.close:focus, button.close:hover {
           animation-fill-mode: forwards;
 }
 
-.p01 .drawbrand .brand.L .count {
+.p01 .drawbrand .brand.L .mycount {
   right: 12%;
   background: rgba(255, 255, 255, 0.8);
 }
 
 @media (min-width: 812px) {
-  .p01 .drawbrand .brand.L .count {
+  .p01 .drawbrand .brand.L .mycount {
     right: 5%;
   }
 }
 
 @media (min-width: 1024px) {
-  .p01 .drawbrand .brand.L .count {
+  .p01 .drawbrand .brand.L .mycount {
     right: 18%;
   }
 }
 
 @media (min-width: 1200px) {
-  .p01 .drawbrand .brand.L .count {
+  .p01 .drawbrand .brand.L .mycount {
     right: 9%;
   }
 }
 
 @media (min-width: 1920px) {
-  .p01 .drawbrand .brand.L .count {
+  .p01 .drawbrand .brand.L .mycount {
     right: 22%;
   }
 }
 
 @media (max-width: 767px) {
-  .p01 .drawbrand .brand.L .count {
+  .p01 .drawbrand .brand.L .mycount {
     right: 6%;
   }
 }
 
 @media (max-width: 720px) {
-  .p01 .drawbrand .brand.L .count {
+  .p01 .drawbrand .brand.L .mycount {
     right: 20%;
   }
 }
 
 @media (max-width: 720px) and (orientation: portrait) {
-  .p01 .drawbrand .brand.L .count {
+  .p01 .drawbrand .brand.L .mycount {
     right: 30%;
   }
 }
 
 @media (min-width: 600px) and (max-width: 719px) {
-  .p01 .drawbrand .brand.L .count {
+  .p01 .drawbrand .brand.L .mycount {
     right: 5%;
   }
 }
 
 @media (max-width: 600px) {
-  .p01 .drawbrand .brand.L .count {
+  .p01 .drawbrand .brand.L .mycount {
     right: 20%;
   }
 }
 
 @media (max-width: 576px) and (orientation: landscape) {
-  .p01 .drawbrand .brand.L .count {
+  .p01 .drawbrand .brand.L .mycount {
     right: 6%;
   }
 }
 
 @media (max-width: 480px) {
-  .p01 .drawbrand .brand.L .count {
+  .p01 .drawbrand .brand.L .mycount {
     right: 22%;
   }
 }
 
 @media (max-width: 480px) and (orientation: landscape) {
-  .p01 .drawbrand .brand.L .count {
+  .p01 .drawbrand .brand.L .mycount {
     right: 3%;
   }
 }
 
 @media (max-width: 414px) {
-  .p01 .drawbrand .brand.L .count {
+  .p01 .drawbrand .brand.L .mycount {
     right: 18%;
   }
 }
 
 @media (max-width: 384px) {
-  .p01 .drawbrand .brand.L .count {
+  .p01 .drawbrand .brand.L .mycount {
     right: 12%;
   }
 }
 
 @media (max-width: 375px) {
-  .p01 .drawbrand .brand.L .count {
+  .p01 .drawbrand .brand.L .mycount {
     right: 25%;
   }
 }
@@ -14785,9 +14805,6 @@ button.close:focus, button.close:hover {
   width: 200px;
   height: 65px;
   background: linear-gradient(35deg, transparent 49%, #131017 49%, transparent 50%, transparent 50%);
-  /* iPhone X */
-  /* ----------- iPhone 4 ----------- */
-  /* ----------- iPhone 5 ----------- */
 }
 
 @media (min-width: 768px) {
@@ -14842,6 +14859,14 @@ button.close:focus, button.close:hover {
     left: 30%;
     width: 140px;
     height: 80px;
+  }
+}
+@media (min-width: 3440px) {
+  .p01 .drawbrand .brand.L .line {
+    left: -30%;
+    top: 8%;
+    width: 380px;
+    height: 120px;
   }
 }
 
@@ -14973,7 +14998,17 @@ button.close:focus, button.close:hover {
 
 @media (min-width: 1920px) {
   .p01 .drawbrand .brand.L .title2 {
-    left: -31%;
+    left: -65%;
+  }
+}
+@media (min-width: 2560px) {
+  .p01 .drawbrand .brand.L .title2 {
+    left: -100%;
+  }
+}
+@media (min-width: 3440px) {
+  .p01 .drawbrand .brand.L .title2 {
+    left: -138%;
   }
 }
 
@@ -14992,8 +15027,6 @@ button.close:focus, button.close:hover {
 .p01 .drawbrand .brand.R svg {
   left: 0%;
   height: 96%;
-  /* iPhone X */
-  /* iPhone 4 */
 }
 
 @media (min-width: 768px) {
@@ -15093,38 +15126,21 @@ button.close:focus, button.close:hover {
     top: 29%;
   }
 }
-
 @media (max-width: 412px) {
   .p01 .drawbrand .brand.R svg {
     height: 58.5%;
     top: 30%;
   }
 }
-
-@media (max-width: 384px) {
-  .p01 .drawbrand .brand.R svg {
-    top: 34%;
-  }
-}
-
 @media (max-width: 375px) {
   .p01 .drawbrand .brand.R svg {
-    height: 66%;
-    top: 30%;
+    height: 64%;
   }
 }
-
-@media (min-width: 322px) and (max-width: 372px) {
+@media (max-width: 360px) {
   .p01 .drawbrand .brand.R svg {
-    height: 62%;
+    height: 53%;
     top: 31%;
-  }
-}
-
-@media (max-width: 320px) {
-  .p01 .drawbrand .brand.R svg {
-    height: 63%;
-    top: 32%;
   }
 }
 
@@ -15567,97 +15583,97 @@ button.close:focus, button.close:hover {
           animation: fadeInDown 0.2s both 4.15s;
 }
 
-.p01 .drawbrand .brand.R .count {
+.p01 .drawbrand .brand.R .mycount {
   left: 19%;
   color: #fff;
 }
 
 @media (min-width: 812px) {
-  .p01 .drawbrand .brand.R .count {
+  .p01 .drawbrand .brand.R .mycount {
     left: 7%;
   }
 }
 
 @media (min-width: 1024px) {
-  .p01 .drawbrand .brand.R .count {
+  .p01 .drawbrand .brand.R .mycount {
     left: 18%;
   }
 }
 
 @media (min-width: 1200px) {
-  .p01 .drawbrand .brand.R .count {
+  .p01 .drawbrand .brand.R .mycount {
     left: 13%;
   }
 }
 
 @media (min-width: 1920px) {
-  .p01 .drawbrand .brand.R .count {
+  .p01 .drawbrand .brand.R .mycount {
     left: 30%;
   }
 }
 
 @media (max-width: 767px) {
-  .p01 .drawbrand .brand.R .count {
+  .p01 .drawbrand .brand.R .mycount {
     left: 9.5%;
   }
 }
 
 @media (max-width: 720px) {
-  .p01 .drawbrand .brand.R .count {
+  .p01 .drawbrand .brand.R .mycount {
     left: 20%;
   }
 }
 
 @media (max-width: 720px) and (orientation: portrait) {
-  .p01 .drawbrand .brand.R .count {
+  .p01 .drawbrand .brand.R .mycount {
     left: 30%;
   }
 }
 
 @media (min-width: 600px) and (max-width: 719px) {
-  .p01 .drawbrand .brand.R .count {
+  .p01 .drawbrand .brand.R .mycount {
     left: 10%;
   }
 }
 
 @media (max-width: 600px) {
-  .p01 .drawbrand .brand.R .count {
+  .p01 .drawbrand .brand.R .mycount {
     left: 20%;
   }
 }
 
 @media (max-width: 576px) and (orientation: landscape) {
-  .p01 .drawbrand .brand.R .count {
+  .p01 .drawbrand .brand.R .mycount {
     left: 12%;
   }
 }
 
 @media (max-width: 480px) {
-  .p01 .drawbrand .brand.R .count {
+  .p01 .drawbrand .brand.R .mycount {
     left: 25%;
   }
 }
 
 @media (max-width: 480px) and (orientation: landscape) {
-  .p01 .drawbrand .brand.R .count {
+  .p01 .drawbrand .brand.R .mycount {
     left: 7%;
   }
 }
 
 @media (max-width: 414px) {
-  .p01 .drawbrand .brand.R .count {
+  .p01 .drawbrand .brand.R .mycount {
     left: 32%;
   }
 }
 
 @media (max-width: 384px) {
-  .p01 .drawbrand .brand.R .count {
+  .p01 .drawbrand .brand.R .mycount {
     left: 15%;
   }
 }
 
 @media (max-width: 375px) {
-  .p01 .drawbrand .brand.R .count {
+  .p01 .drawbrand .brand.R .mycount {
     left: 25%;
   }
 }
@@ -15670,9 +15686,6 @@ button.close:focus, button.close:hover {
   height: 65px;
   right: 39%;
   background: linear-gradient(-35deg, transparent 49%, #131017 49%, transparent 50%, transparent 50%);
-  /* ----------- iPhone X ----------- */
-  /* ----------- iPhone 4 ----------- */
-  /* ----------- iPhone 5 ----------- */
 }
 
 @media (min-width: 768px) {
@@ -15744,7 +15757,14 @@ button.close:focus, button.close:hover {
     height: 80px;
   }
 }
-
+@media (min-width: 3440px) {
+  .p01 .drawbrand .brand.R .line {
+    top: 8%;
+    right:-30%;
+    width: 380px;
+    height: 120px; 
+  }
+}
 @media (max-width: 767px) {
   .p01 .drawbrand .brand.R .line {
     height: 28px;
@@ -15808,30 +15828,24 @@ button.close:focus, button.close:hover {
     right: 3%;
   }
 }
-
-@media (max-width: 384px) {
-  .p01 .drawbrand .brand.R .line {
-    top: 30%;
-    right: 3%;
-    height: 25px;
-  }
-}
-
 @media (max-width: 375px) {
   .p01 .drawbrand .brand.R .line {
-    right: 2%;
+    right: 33%;
     top: 27%;
     height: 28px;
   }
 }
-
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .p01 .drawbrand .brand.R .line {
-    right: -36%;
-    top: 36%;
+    right: -8%;
   }
 }
-
+/* iphone 6, 6s, 7, 8 */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2){
+  .p01 .drawbrand .brand.R .line {
+    right:-11%;
+  }
+}
 @media only screen and (min-device-width: 375px) and (max-device-width: 410px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   .p01 .drawbrand .brand.R .line {
     top: 32%;
@@ -15865,7 +15879,17 @@ button.close:focus, button.close:hover {
 
 @media (min-width: 1920px) {
   .p01 .drawbrand .brand.R .title2 {
-    right: -30%;
+    right: -55%;
+  }
+}
+@media (min-width: 2560px) {
+  .p01 .drawbrand .brand.R .title2 {
+    right: -90%;
+  }
+}
+@media (min-width:3440px){
+  .p01 .drawbrand .brand.R .title2 {
+    right: -120%;
   }
 }
 
@@ -15892,10 +15916,6 @@ button.close:focus, button.close:hover {
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
   height: 90px;
-  /*----*/
-  /* iPhone X */
-  /* iPhone 4 */
-  /* iPhone 5 */
 }
 
 @media (min-width: 768px) {
@@ -15942,7 +15962,7 @@ button.close:focus, button.close:hover {
 
 @media (min-width: 1920px) {
   .p01 .drawbrand .brand.M {
-    height: 300px;
+    height: 350px;
   }
 }
 
@@ -15989,27 +16009,20 @@ button.close:focus, button.close:hover {
     margin-top: 0;
   }
 }
-
-@media (min-width: 376px) and (max-width: 414px) {
+@media (max-width: 375px) {
   .p01 .drawbrand .brand.M {
     height: 200px;
     margin-top: 0;
   }
 }
-
-@media (max-width: 375px) {
+@media (max-width: 360px) {
   .p01 .drawbrand .brand.M {
     height: 160px;
-    margin-top: 0;
+    margin-top: -12%;
   }
 }
 
-@media (max-width: 372px) {
-  .p01 .drawbrand .brand.M {
-    height: 140px;
-    margin-top: 0;
-  }
-}
+
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 410px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   .p01 .drawbrand .brand.M {
@@ -18899,6 +18912,7 @@ button.close:focus, button.close:hover {
   .skillarea {
     -ms-flex-line-pack: distribute;
         align-content: space-around;
+        padding-top: 4%;
   }
 }
 
@@ -19262,21 +19276,6 @@ button.close:focus, button.close:hover {
         flex-wrap: nowrap;
   }
 }
-
-@media (min-width: 376px) and (max-width: 414px) {
-  .skillarea .skill-icon {
-    margin: 4% 0;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-}
-
 @media (max-width: 375px) {
   .skillarea .skill-icon {
     -webkit-box-flex: 0;
@@ -19288,21 +19287,7 @@ button.close:focus, button.close:hover {
             flex-direction: column;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-  }
-}
-
-@media (max-width: 320px) {
-  .skillarea .skill-icon {
-    margin: 8% 0;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 31.3333%;
-            flex: 0 0 31.3333%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+        margin:5% 0;
   }
 }
 
@@ -19851,7 +19836,7 @@ button.close:focus, button.close:hover {
         -ms-flex: 1 2 100%;
             flex: 1 2 100%;
     padding-left: 0;
-    padding-bottom: 2%;
+    padding-bottom: 10%;
     height: auto;
   }
 }
@@ -19965,6 +19950,12 @@ button.close:focus, button.close:hover {
     font-size: 2.2rem;
   }
 }
+@media (min-width: 2560px) {
+  .skillarea .skill-icon a.icon .skill-title span, .skillarea .skill-icon a.icon:active .skill-title span,
+  .skillarea .skill-icon a.icon:focus .skill-title span, .skillarea .skill-icon a.icon:visited .skill-title span {
+    font-size: 3rem;
+  }
+}
 
 @media (max-width: 733px) {
   .skillarea .skill-icon a.icon .skill-title span, .skillarea .skill-icon a.icon:active .skill-title span,
@@ -20052,6 +20043,12 @@ button.close:focus, button.close:hover {
   .skillarea .skill-icon a.icon .skill-title span:last-of-type, .skillarea .skill-icon a.icon:active .skill-title span:last-of-type,
   .skillarea .skill-icon a.icon:focus .skill-title span:last-of-type, .skillarea .skill-icon a.icon:visited .skill-title span:last-of-type {
     font-size: 1.6rem;
+  }
+}
+@media (min-width: 2560px) {
+  .skillarea .skill-icon a.icon .skill-title span:last-of-type, .skillarea .skill-icon a.icon:active .skill-title span:last-of-type,
+  .skillarea .skill-icon a.icon:focus .skill-title span:last-of-type, .skillarea .skill-icon a.icon:visited .skill-title span:last-of-type {
+    font-size: 2rem;
   }
 }
 
@@ -20222,7 +20219,12 @@ button.close:focus, button.close:hover {
     height: 40%;
   }
 }
-
+@media (min-width:2560px) {
+  .skillarea .skill-icon .skill-text {
+    font-size:2.4rem;
+  }
+}
+                
 @media (max-width: 767px) {
   .skillarea .skill-icon .skill-text {
     font-size: 1rem;
@@ -20277,12 +20279,9 @@ button.close:focus, button.close:hover {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .skillarea .skill-icon .skill-text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 2 56.6666%;
-            flex: 0 2 56.6666%;
-    font-size: 1rem;
+    letter-spacing: 1px;
   }
 }
 
@@ -20826,6 +20825,11 @@ button.close:focus, button.close:hover {
     float: none;
   }
 }
+@media (max-width:375px){
+  .container-fluid.mid .timeline #timeline .timeline-item:nth-child(odd) .timeline-content {
+    float: right;
+  }
+}
 
 .container-fluid.mid .timeline #timeline .timeline-item:nth-child(odd) .timeline-content:before {
   content: '';
@@ -20957,6 +20961,12 @@ button.close:focus, button.close:hover {
 @media (min-width: 1920px) {
   .out-wrap #tabs li a.box-img:hover, .out-wrap #tabs li a.box-img:active, .out-wrap #tabs li a.box-img:focus, .out-wrap #tabs li:hover a.box-img, .out-wrap #tabs li:hover a.box-img:hover, .out-wrap #tabs li.active a.box-img, .out-wrap #tabs li:active a.box-img, .out-wrap #tabs li:focus a.box-img, .out-wrap #tabs li.active a.box-img:hover, .out-wrap #tabs li:active a.box-img:hover, .out-wrap #tabs li:focus a.box-img:hover, .out-wrap #tabs li.active a.box-img.all, .out-wrap #tabs li:active a.box-img.all, .out-wrap #tabs li:focus a.box-img.all, .out-wrap #tabs li.active a.box-img.web, .out-wrap #tabs li:active a.box-img.web, .out-wrap #tabs li:focus a.box-img.web, .out-wrap #tabs li.active a.box-img.app, .out-wrap #tabs li:active a.box-img.app, .out-wrap #tabs li:focus a.box-img.app, .out-wrap #tabs li.active a.box-img.ui, .out-wrap #tabs li:active a.box-img.ui, .out-wrap #tabs li:focus a.box-img.ui, .out-wrap #tabs li.active a.box-img.package, .out-wrap #tabs li:active a.box-img.package, .out-wrap #tabs li:focus a.box-img.package, .out-wrap #tabs li.active a.box-img.graphic, .out-wrap #tabs li:active a.box-img.graphic, .out-wrap #tabs li:focus a.box-img.graphic, .out-wrap #tabs li.active a.box-img.illustration, .out-wrap #tabs li:active a.box-img.illustration, .out-wrap #tabs li:focus a.box-img.illustration, .out-wrap #tabs li.active a.box-img.other, .out-wrap #tabs li:active a.box-img.other, .out-wrap #tabs li:focus a.box-img.other {
     width: 20rem;
+  }
+}
+
+@media (min-width: 3440px) {
+  .out-wrap #tabs li a.box-img:hover, .out-wrap #tabs li a.box-img:active, .out-wrap #tabs li a.box-img:focus, .out-wrap #tabs li:hover a.box-img, .out-wrap #tabs li:hover a.box-img:hover, .out-wrap #tabs li.active a.box-img, .out-wrap #tabs li:active a.box-img, .out-wrap #tabs li:focus a.box-img, .out-wrap #tabs li.active a.box-img:hover, .out-wrap #tabs li:active a.box-img:hover, .out-wrap #tabs li:focus a.box-img:hover, .out-wrap #tabs li.active a.box-img.all, .out-wrap #tabs li:active a.box-img.all, .out-wrap #tabs li:focus a.box-img.all, .out-wrap #tabs li.active a.box-img.web, .out-wrap #tabs li:active a.box-img.web, .out-wrap #tabs li:focus a.box-img.web, .out-wrap #tabs li.active a.box-img.app, .out-wrap #tabs li:active a.box-img.app, .out-wrap #tabs li:focus a.box-img.app, .out-wrap #tabs li.active a.box-img.ui, .out-wrap #tabs li:active a.box-img.ui, .out-wrap #tabs li:focus a.box-img.ui, .out-wrap #tabs li.active a.box-img.package, .out-wrap #tabs li:active a.box-img.package, .out-wrap #tabs li:focus a.box-img.package, .out-wrap #tabs li.active a.box-img.graphic, .out-wrap #tabs li:active a.box-img.graphic, .out-wrap #tabs li:focus a.box-img.graphic, .out-wrap #tabs li.active a.box-img.illustration, .out-wrap #tabs li:active a.box-img.illustration, .out-wrap #tabs li:focus a.box-img.illustration, .out-wrap #tabs li.active a.box-img.other, .out-wrap #tabs li:active a.box-img.other, .out-wrap #tabs li:focus a.box-img.other {
+    width: 24rem;
   }
 }
 
@@ -21666,6 +21676,11 @@ button.close:focus, button.close:hover {
 @media (min-width: 1200px) {
   .articleBlk {
     padding: 4% 5%;
+  }
+}
+@media (min-width: 3440px) {
+  .articleBlk {
+    padding: 0 5%;
   }
 }
 
@@ -24773,7 +24788,11 @@ a.caption:hover .snip01:hover h6 {
     font-size: 4rem;
   }
 }
-
+@media (min-width:2560px) {
+  .p06 .container-fluid .flex-item.title1 {
+    font-size: 6rem;
+  }
+}
 @media (max-width: 720px) {
   .p06 .container-fluid .flex-item.title1 {
     font-size: 3rem;
@@ -24809,6 +24828,11 @@ a.caption:hover .snip01:hover h6 {
   .p06 .container-fluid .flex-item.title1 {
     font-size: 1.8rem;
     line-height: 2.4rem;
+  }
+}
+@media (max-width: 360px) {
+  .p06 .container-fluid .flex-item.title1 {
+    font-size: 1.7rem;
   }
 }
 
@@ -24909,7 +24933,17 @@ a.caption:hover .snip01:hover h6 {
     height: 2rem;
   }
 }
-
+@media (max-width: 360px) {
+  .p06 .container-fluid .flex-item.contact svg.email {
+    height: 3.3rem;
+  }
+}
+ /* iphone 6, 6s, 7, 8 */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) { 
+  .p06 .container-fluid .flex-item.contact svg.email {
+    height: 3.28rem;
+  }
+}
 .p06 .container-fluid .flex-item.contact svg.email g {
   stroke-width: 1;
 }
@@ -24982,7 +25016,11 @@ a[type="email"] {
     font-size: 3rem;
   }
 }
-
+@media (min-width: 2560px) {
+  a[type="email"] {
+    font-size: 4rem;
+  }
+}
 @media (max-width: 767px) {
   a[type="email"] {
     line-height: 2.304rem;
