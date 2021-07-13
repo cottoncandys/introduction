@@ -13909,8 +13909,8 @@ button.close:focus, button.close:hover {
 /*Note 8*/
 @media (max-width: 414px){
   .p01 .drawbrand .brand.L svg {
-    right: -90%;
-    height: 67.5%;
+    right: -50%;
+    height: 61.5%;
     top: 29%;
   }
 }
@@ -15123,9 +15123,9 @@ button.close:focus, button.close:hover {
 
 @media (max-width: 414px) {
   .p01 .drawbrand .brand.R svg {
-    height: 65%;
+    height: 59%;
     top: 29%;
-    left:-70%;
+    left:-50%;
   }
 }
 @media (max-width: 412px) {
