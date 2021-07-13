@@ -7327,6 +7327,7 @@ button.close span {
 button.close:focus, button.close:hover {
   background: linear-gradient(45deg, #ef657d, #1bbfe4);
   opacity: 0.9;
+  filter: alpha(opacity=90);
 }
 
 /*---------- 首頁的 modal  ----------*/
@@ -13912,7 +13913,13 @@ button.close:focus, button.close:hover {
     top: 29%;
   }
 }
-
+/*Note 8*/
+/*@media only screen and (-webkit-min-device-pixel-ratio: 3.5) {*/
+@media (max-width: 414px){
+   .p01 .drawbrand .brand.L svg {
+    right: -57%;
+  }
+}
 @media (max-width: 412px) {
   .p01 .drawbrand .brand.L svg {
     right: -42%;
@@ -13928,7 +13935,7 @@ button.close:focus, button.close:hover {
 }
 @media (max-width: 360px) {
 .p01 .drawbrand .brand.L svg {
-    right: -44%;
+    right: -52%;
     height: 55%;
     top: 31%;
   }
@@ -19276,7 +19283,7 @@ button.close:focus, button.close:hover {
         flex-wrap: nowrap;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .skillarea .skill-icon {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -20924,6 +20931,7 @@ button.close:focus, button.close:hover {
 
 .out-wrap #tabs li a.box-img:hover h4, .out-wrap #tabs li a.box-img:active h4, .out-wrap #tabs li a.box-img:focus h4, .out-wrap #tabs li:hover a.box-img h4, .out-wrap #tabs li:hover a.box-img:hover h4, .out-wrap #tabs li.active a.box-img h4, .out-wrap #tabs li:active a.box-img h4, .out-wrap #tabs li:focus a.box-img h4, .out-wrap #tabs li.active a.box-img:hover h4, .out-wrap #tabs li:active a.box-img:hover h4, .out-wrap #tabs li:focus a.box-img:hover h4, .out-wrap #tabs li.active a.box-img.all h4, .out-wrap #tabs li:active a.box-img.all h4, .out-wrap #tabs li:focus a.box-img.all h4, .out-wrap #tabs li.active a.box-img.web h4, .out-wrap #tabs li:active a.box-img.web h4, .out-wrap #tabs li:focus a.box-img.web h4, .out-wrap #tabs li.active a.box-img.app h4, .out-wrap #tabs li:active a.box-img.app h4, .out-wrap #tabs li:focus a.box-img.app h4, .out-wrap #tabs li.active a.box-img.ui h4, .out-wrap #tabs li:active a.box-img.ui h4, .out-wrap #tabs li:focus a.box-img.ui h4, .out-wrap #tabs li.active a.box-img.package h4, .out-wrap #tabs li:active a.box-img.package h4, .out-wrap #tabs li:focus a.box-img.package h4, .out-wrap #tabs li.active a.box-img.graphic h4, .out-wrap #tabs li:active a.box-img.graphic h4, .out-wrap #tabs li:focus a.box-img.graphic h4, .out-wrap #tabs li.active a.box-img.illustration h4, .out-wrap #tabs li:active a.box-img.illustration h4, .out-wrap #tabs li:focus a.box-img.illustration h4, .out-wrap #tabs li.active a.box-img.other h4, .out-wrap #tabs li:active a.box-img.other h4, .out-wrap #tabs li:focus a.box-img.other h4 {
   opacity: 1;
+  filter: alpha(opacity=100);
   -webkit-transition: all .5s ease-in;
   transition: all .5s ease-in;
 }
@@ -21182,6 +21190,7 @@ button.close:focus, button.close:hover {
   -webkit-animation: rotate2 4s ease-in-out forwards;
           animation: rotate2 4s ease-in-out forwards;
   opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 
 .bg02 svg.animated:last-child {
@@ -21471,6 +21480,7 @@ button.close:focus, button.close:hover {
 
 .out-wrap #tabs li a.box-img h4 {
   opacity: 0;
+  filter: alpha(opacity=0);
   width: 100%;
   height: inherit;
   display: -webkit-inline-box;
@@ -21895,6 +21905,7 @@ button.close:focus, button.close:hover {
 
 .articleBlk .list-area .list-content .list a:hover .img {
   opacity: 0.3;
+  filter: alpha(opacity=30);
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
   -webkit-transition: all 1.8s ease-in-out;
@@ -22085,6 +22096,7 @@ a.caption .panel-border .tone .snip01 {
 
 .detail .flexContainerBtn .icon-box {
   opacity: 1;
+  filter: alpha(opacity=100);
 }
 
 .detail .row {
@@ -23684,6 +23696,7 @@ a.caption .panel-border .tone .snip01 {
 /*----------  more detail頁面 開and關 ----------*/
 .icon-box {
   opacity: 0;
+  filter: alpha(opacity=0);
   width: 3rem;
   height: 3rem;
   -ms-flex-line-pack: center;
@@ -23782,6 +23795,7 @@ a.caption .panel-border .tone .snip01 {
 
 a:hover .icon-box {
   opacity: 1;
+  filter: alpha(opacity=100);
 }
 
 a:hover .icon-box.btn-showmore:hover:before, a:hover .icon-box.btn-showmore-close:hover:after {
