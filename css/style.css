@@ -13910,17 +13910,17 @@ button.close:focus, button.close:hover {
 @media (max-width: 414px){
   .p01 .drawbrand .brand.L svg {
     right: -50%;
-    height: 61.5%;
+    height: 60%;
     top: 29%;
   }
 }
-@media (max-width: 412px) {
+/* @media (max-width: 412px) {
   .p01 .drawbrand .brand.L svg {
     right: -42%;
     height: 60%;
     top: 30.5%;
   }
-}
+} */
 @media (max-width: 375px) {
   .p01 .drawbrand .brand.L svg {
     right: -50%;
@@ -15128,13 +15128,13 @@ button.close:focus, button.close:hover {
     left:-50%;
   }
 }
-@media (max-width: 412px) {
+/* @media (max-width: 412px) {
   .p01 .drawbrand .brand.R svg {
     height: 58.5%;
     top: 30%;
     left:0;
   }
-}
+} */
 @media (max-width: 375px) {
   .p01 .drawbrand .brand.R svg {
     height: 64%;
