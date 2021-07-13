@@ -13913,11 +13913,16 @@ button.close:focus, button.close:hover {
     top: 29%;
   }
 }
-/*Note 8*/
-/*@media only screen and (-webkit-min-device-pixel-ratio: 3.5) {*/
+
 @media (max-width: 414px){
    .p01 .drawbrand .brand.L svg {
     right: -57%;
+  }
+}
+/*Note 8*/
+@media only screen and (-webkit-min-device-pixel-ratio: 3.5) {
+  .p01 .drawbrand .brand.L svg {
+    right: -62%;
   }
 }
 @media (max-width: 412px) {
