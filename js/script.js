@@ -43,14 +43,14 @@ $(document).ready(function() {
 /*************************************************************** */
 
   //  4.點選導覽列 會到指定圖片
-  let num_li = $(".nav li").length;
+  let num_li = $(".nav.big li").length;
   for (var i = 0; i < num_li; i++) {
     //   $("html,body").stop();
-      $(".nav li:eq(" + i + ") ").click({//自命名變數i,e
-          id: i
+      $(".nav.big li:eq(" + i + ") ").click({//自命名變數i,e 
+        id: i
       }, function(e) {//
-          $(".nav li").removeClass("active").css("background-color", "$gray-l90");//所有的LI 都變回原色 除了被點到的
-          $(".nav li").children('.slider').css("visibility", "hidden"); 
+          $(".nav.big li").removeClass("active").css("background-color", "$gray-l90");//所有的LI 都變回原色 除了被點到的
+          $(".nav.big li").children(".slider").css("visibility", "hidden"); 
           let page = e.data.id ;//把從0開始+1 變成從1開始
 
           $("html,body").animate({
@@ -60,13 +60,10 @@ $(document).ready(function() {
           $(this).addClass("active");//this= (".nav li:eq("+e.data.id+")") 某個LI被點到 bg就變色
           $(this).children(".slider").css("visibility", "visible");
 
-      })
-      
+      });
+            
     }
-    // $(".nav li:eq(6)").click(function(){
-    //     $("#tab1").addClass("active");
-    //     // $("#tab2.active").find("#web").addClass("active");
-    // })
+   
   //  2.一進入網頁時，nav垂直置中
   center();
   //  3.縮放allpage，重新nav置中
@@ -79,38 +76,87 @@ $(document).ready(function() {
       $(".nav").css("top", pos);
   }
   //5用捲動捲軸時改變游標顏色
-  $(window).scroll(function() {
-      $(".nav li").removeClass("active").css("background-color", "$gray-l90"); //除了被點擊到的游標，其他都恢復成原來的顏色 
-      $(".nav li .slider").css("visibility", "hidden");
+//   $(window).scrollTop(function() {
+//       $(".nav li").removeClass("active").css("background-color", "$gray-l90"); //除了被點擊到的游標，其他都恢復成原來的顏色 
+//       $(".nav li .slider").css("visibility", "hidden");
 
-      if ($(window).scrollTop() >= $(".p00").offset().top && $(window).scrollTop() < $(".p01").offset().top) {
-          $(".nav li:eq(0)").addClass("active");
-      } else if ($(window).scrollTop() + 10 >= $(".p01").offset().top && $(window).scrollTop() < $(".p02").offset().top) {
-          $(".nav li:eq(1)").addClass("active");
-          $(".nav li:eq(1) .slider").css("visibility", "visible");
-      } else if ($(window).scrollTop() >= $(".p02").offset().top && $(window).scrollTop() < $(".p03").offset().top) {
-          $(".nav li:eq(2)").addClass("active");
-          $(".nav li:eq(2) .slider").css("visibility", "visible");
-      } else if ($(window).scrollTop() >= $(".p03").offset().top && $(window).scrollTop() < $(".p04").offset().top) {
-          $(".nav li:eq(3)").addClass("active");
-          $(".nav li:eq(3) .slider").css("visibility", "visible");
-      } else if ($(window).scrollTop() >= $(".p04").offset().top && $(window).scrollTop() < $(".p05").offset().top) {
-          $(".nav li:eq(4)").addClass("active");
-          $(".nav li:eq(4) .slider").css("visibility", "visible");
-          $("#tab1").addClass("active");
-      } else if ($(window).scrollTop() >= $(".p05").offset().top && $(window).scrollTop() < $(".p06").offset().top) {
-          $(".nav li:eq(5)").addClass("active");
-          $(".nav li:eq(5) .slider").css("visibility", "visible");
-          $("#tab1").addClass("active");
-          //   $("#tab2").hasClass("active").find("#web").addClass("active");
-      } else if ($(window).scrollTop() >= $(".p06").offset().top) {
-          $(".nav li:eq(6)").addClass("active");
-          $(".nav li:eq(6) .slider").css("visibility", "visible");
-      }
+//       if ($(window).scrollTop() >= $(".p00").offset().top && $(window).scrollTop() < $(".p01").offset().top) {
+//           $(".nav li:eq(0)").addClass("active");
+//       } else if ($(window).scrollTop() + 10 >= $(".p01").offset().top && $(window).scrollTop() < $(".p02").offset().top) {
+//           $(".nav li:eq(1)").addClass("active");
+//           $(".nav li:eq(1) .slider").css("visibility", "visible");  
+//       } else if ($(window).scrollTop() >= $(".p02").offset().top && $(window).scrollTop() < $(".p03").offset().top) {
+//           $(".nav li:eq(2)").addClass("active");
+//           $(".nav li:eq(2) .slider").css("visibility", "visible");
+//       } else if ($(window).scrollTop() >= $(".p03").offset().top && $(window).scrollTop() < $(".p04").offset().top) {
+//           $(".nav li:eq(3)").addClass("active");
+//           $(".nav li:eq(3) .slider").css("visibility", "visible");
+//       } else if ($(window).scrollTop() >= $(".p04").offset().top && $(window).scrollTop() < $(".p05").offset().top) {
+//           $(".nav li:eq(4)").addClass("active");
+//           $(".nav li:eq(4) .slider").css("visibility", "visible");
+//       } else if ($(window).scrollTop() >= $(".p05").offset().top && $(window).scrollTop() < $(".p06").offset().top) {
+//           $(".nav li:eq(5)").addClass("active");
+//           $(".nav li:eq(5) .slider").css("visibility", "visible");
+//       } else if ($(window).scrollTop() >= $(".p06").offset().top) {
+//           $(".nav li:eq(6)").addClass("active");
+//           $(".nav li:eq(6) .slider").css("visibility", "visible");
+//       }
 
-  })
+//   });
 
+    
 
+    /*****************************Brand*Number*Run******************************** */
+
+    $(window).on('scroll', function () {
+        if (checkVisible($('#p01'))) {
+            
+            $('.mycount').each(function () {
+                var $this = $(this),
+                    countTo = $this.text();//$this.attr('data-count');
+
+                $({ countNum: $this.text() }).animate({
+                    countNum: countTo
+                },{
+                        duration: 4000,
+                        easing: 'swing',
+                        step: function () {
+                            $this.text(Math.floor(this.countNum) + '%');
+                        },
+                        complete: function () {
+                            $this.text((this.countNum) + '%');
+                        }
+                });
+
+            });
+            $(window).off('scroll');   
+
+        } 
+        
+    });
+
+    $(".nav.big ul li:nth-child(6)").click(function (e) {
+        e.preventDefault();
+        $(".active", $(this).closest("ul.nav-tabs li")).removeClass("active");
+        $(this).addClass("active vv");
+        $("ul.nav-tabs li").eq(0).addClass("active").siblings(".active").removeClass("active");//預設在第一個tab
+        $(".tab-pane").eq(0).addClass("active").siblings(".active").removeClass("active");//預設在第一個tab連動的子項目
+    });
+    
+
+    function checkVisible(elm, eval) {
+        eval = eval || "object visible";
+        var viewportHeight = $(window).height(), // Viewport Height
+            scrolltop = $(window).scrollTop(), // Scroll Top
+            y = $(elm).offset().top,
+            elementHeight = $(elm).height();
+
+        if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+        if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+    }
+
+    
+    
 /*******************************time line ******************************** */
 
     new WOW({ live: true }).init();

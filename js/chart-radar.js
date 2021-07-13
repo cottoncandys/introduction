@@ -1,5 +1,5 @@
 window.onload = function () {
-
+    
     Chart.defaults.global.defaultFontSize = 15;
     Chart.defaults.global.responsive = true;
     Chart.defaults.global.elements.point.radius = 3;

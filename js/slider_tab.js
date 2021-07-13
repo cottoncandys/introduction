@@ -8,9 +8,9 @@ $(document).ready(function () {
     // });
 
     //slider
+   
 
-
-    // var idss = $("[id^=tArticle]").length;
+    //var idss = $("[id^=tArticle]").length;
     // // var bb = idss.attr("id").split("tArticle")[1];
     // // $("div [id^=tArticle]").each(function () {
     // //     bb++;
@@ -19,7 +19,7 @@ $(document).ready(function () {
    
     // let ids = document.getElementsById("[id^=tArticle]");
     // for (var i = 0; i < ids.length; i++) {
-
+    
     // // if ($('.tab-pane').hasClass('active')){
     // if (idss > 0) {
     //     // var ids = idss.attr("id").split("tArticle")[1];
@@ -70,16 +70,13 @@ $(document).ready(function () {
     // }
     /* --------------------- */
  
-
-
-  
-
+   
 /* ------------------- */
 
     if ($("#tArticle1").length > 0) {
         var list1 = $("#tArticle1").find(".list").eq(0);
         var $item_id1 = 0;
-        var $item_limit1 = $("#tArticle1").attr("limit") || 2; //計算字串長度
+        var $item_limit1 = $("#tArticle1").attr("limit") || 3; //計算字串長度
         var $item_max1 = list1.find("a").length;
         var $item_page1 = Math.ceil($item_max1 / $item_limit1);
         var next_btn1 = $("#tArticle1").find(".next").eq(0);
@@ -125,7 +122,7 @@ $(document).ready(function () {
     if ($("#tArticle2").length > 0) {
         var list2 = $("#tArticle2").find(".list").eq(0);
         var $item_id2 = 0;
-        var $item_limit2 = $("#tArticle2").attr("limit") || 2; //計算字串長度
+        var $item_limit2 = $("#tArticle2").attr("limit") || 3; //計算字串長度
         var $item_max2 = list2.find("a").length;
         var $item_page2 = Math.ceil($item_max2 / $item_limit2);
         var next_btn2 = $("#tArticle2").find(".next").eq(0);
@@ -171,7 +168,7 @@ $(document).ready(function () {
     if ($("#tArticle3").length > 0) {
         var list3 = $("#tArticle3").find(".list").eq(0);
         var $item_id3 = 0;
-        var $item_limit3 = $("#tArticle3").attr("limit") || 2; //計算字串長度
+        var $item_limit3 = $("#tArticle3").attr("limit") || 3; //計算字串長度
         var $item_max3 = list3.find("a").length;
         var $item_page3 = Math.ceil($item_max3 / $item_limit3);
         var next_btn3 = $("#tArticle3").find(".next").eq(0);
@@ -217,7 +214,7 @@ $(document).ready(function () {
     if ($("#tArticle4").length > 0) {
         var list4 = $("#tArticle4").find(".list").eq(0);
         var $item_id4 = 0;
-        var $item_limit4 = $("#tArticle4").attr("limit") || 2; //計算字串長度
+        var $item_limit4 = $("#tArticle4").attr("limit") || 3; //計算字串長度
         var $item_max4 = list4.find("a").length;
         var $item_page4 = Math.ceil($item_max4 / $item_limit4);
         var next_btn4 = $("#tArticle4").find(".next").eq(0);
@@ -263,7 +260,7 @@ $(document).ready(function () {
     if ($("#tArticle5").length > 0) {
         var list5 = $("#tArticle5").find(".list").eq(0);
         var $item_id5 = 0;
-        var $item_limit5 = $("#tArticle5").attr("limit") || 2; //計算字串長度
+        var $item_limit5 = $("#tArticle5").attr("limit") || 3; //計算字串長度
         var $item_max5 = list5.find("a").length;
         var $item_page5 = Math.ceil($item_max5 / $item_limit5);
         var next_btn5 = $("#tArticle5").find(".next").eq(0);
@@ -309,7 +306,7 @@ $(document).ready(function () {
     if ($("#tArticle6").length > 0) {
         var list6 = $("#tArticle6").find(".list").eq(0);
         var $item_id6 = 0;
-        var $item_limit6 = $("#tArticle6").attr("limit") || 2; //計算字串長度
+        var $item_limit6 = $("#tArticle6").attr("limit") || 3; //計算字串長度
         var $item_max6 = list6.find("a").length;
         var $item_page6 = Math.ceil($item_max6 / $item_limit6);
         var next_btn6 = $("#tArticle6").find(".next").eq(0);
@@ -355,7 +352,7 @@ $(document).ready(function () {
     if ($("#tArticle7").length > 0) {
         var list7 = $("#tArticle7").find(".list").eq(0);
         var $item_id7 = 0;
-        var $item_limit7 = $("#tArticle7").attr("limit") || 2; //計算字串長度
+        var $item_limit7 = $("#tArticle7").attr("limit") || 3; //計算字串長度
         var $item_max7 = list7.find("a").length;
         var $item_page7 = Math.ceil($item_max7 / $item_limit7);
         var next_btn7 = $("#tArticle7").find(".next").eq(0);
@@ -386,7 +383,7 @@ $(document).ready(function () {
                 var containW7 = $("#tArticle7").find(".list-area").width();
                 $item_id7 -= 1;
                 list7.css("left", $item_id7 * containW7 * -1);
-
+                
                 next_btn7.fadeIn();
                 if ($item_id7 == 0) {
                     prev_btn7.fadeOut();
