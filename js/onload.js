@@ -327,7 +327,7 @@ var Book_v7 = {
         //icon tools position
         var icon=$('#fb7-center');
         var all_width=$('#fb7').width();
-        var left_w=$('#fb7-logo').width();
+        //var left_w=$('#fb7-logo').width();
         var center_w=$('#fb7-center').width();
         var right_w=$('#fb7-right').width();
                 
@@ -361,13 +361,17 @@ var Book_v7 = {
        var position_right=$('#fb7-right').position();
        var xMin_right=position_right.left;
        //left
-       var position_left=$('#fb7-logo').position();
-       var xMax_left=position_left.left+$('#fb7-logo').width();
-              
-       if( xMax_center > xMin_right || xMax_left > xMin_center  ){
-         $('#fb7 #fb7-right,#fb7 #fb7-logo').css('visibility','hidden');
+       //var position_left=$('#fb7-logo').position();
+	   //var xMax_left=position_left.left+$('#fb7-logo').width();
+
+
+       //if( xMax_center > xMin_right || xMax_left > xMin_center  )
+       if( xMax_center > xMin_right ){
+         $('#fb7 #fb7-right').css('visibility','hidden');
+		 // $('#fb7 #fb7-right,#fb7 #fb7-logo').css('visibility','hidden');
        }else{
-         $('#fb7 #fb7-right,#fb7 #fb7-logo').css('visibility','visible');
+         $('#fb7 #fb7-right').css('visibility','visible');
+		  // $('#fb7 #fb7-right,#fb7 #fb7-logo').css('visibility', 'visible');
        }
 
 
