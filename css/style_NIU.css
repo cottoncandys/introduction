@@ -88,7 +88,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45000000', e
 }
 
 
-/* corner left page /*/
+/* corner left page */
 
 #fb7 .turn-page.odd{	  
    
@@ -100,7 +100,7 @@ border-bottom-right-radius: 0px;
  
 }
 
-/* corner right page /*/
+/* corner right page */
 
 #fb7 .turn-page.even{	
 
@@ -126,10 +126,7 @@ border-bottom-left-radius: 0px;
 }
 
 
-#fb7 fieldset{
-	
-	
-}
+
 
 
 #fb7 #fb7-deeplinking{
@@ -156,7 +153,7 @@ border-bottom-left-radius: 0px;
 		margin: -210px 0 0 -275px;
 	}
 	
-#fb7 #page .padding { /*padding: 0 34px;*/ }
+/*#fb7 #page .padding { padding: 0 34px; }*/
 
 
 
@@ -169,7 +166,7 @@ border-bottom-left-radius: 0px;
 #fb7 .fb7-overlay {
 	position: absolute; left: -10000px; top: 0; z-index: 20;
 	
-	/*background: url(../img/bg-overlay.png);/*/
+	/*background: url(../img/bg-overlay.png);*/
 	background:rgba(0,0,0,0);
 	
 	width: 100%; height: 100%;
@@ -216,7 +213,7 @@ border-bottom-left-radius: 0px;
 		position: absolute; z-index: 5;
 		width: 45%; display: none;
 		
-		/*padding-top: 6%;/*/
+		/*padding-top: 6%;*/
 	}
 
 	#fb7 #fb7-about h1,
@@ -236,7 +233,7 @@ border-bottom-left-radius: 0px;
 	
 
 	#fb7 #fb7-about h1{
-		/*background: url(../img/icons.png) no-repeat;/*/
+		/*background: url(../img/icons.png) no-repeat;*/
 		padding: 0 0 0px 0px;	
 	}
 	
@@ -255,7 +252,7 @@ border-bottom-left-radius: 0px;
 		
 	
 	#fb7 #fb7-about p {
-		/*font-size: 0.688em;/*/
+		/*font-size: 0.688em;*/
 		color: #cfeaee;
 		margin-bottom:8%;
 		margin-top:0%;
@@ -269,7 +266,7 @@ border-bottom-left-radius: 0px;
 	}
 	
 	#fb7 #fb7-about a:hover {
-		/*color:#ffffff;/*/	
+		/*color:#ffffff;*/	
 		text-decoration:none;
 	}
 
@@ -312,7 +309,7 @@ border-bottom-left-radius: 0px;
 	
 	#fb7 .fb7-nav-arrow {
 		position: absolute; top: 50%; z-index: 15;
-		/*background: url(../img/icons.png);/*/
+		background: url(../images/arrow.svg);
 		width: 158px; height: 100px;
 		margin-top: -50px;
 		cursor:pointer;
@@ -390,9 +387,9 @@ border-bottom-left-radius: 0px;
 		width: 100%;
 	}
 			
-	#fb7 #fb7-cover li a:hover img {
-		/*opacity: .8;/*/
-	}
+	/*#fb7 #fb7-cover li a:hover img {
+		opacity: .8;
+	}*/
 			
 
 
@@ -452,7 +449,7 @@ border-bottom-left-radius: 0px;
 	#fb7 .fb7-meta.fb7-right .fb7-num {
 				padding-left: 10px;
 	}
-	/*/		
+	*/		
 			
 			
 			
@@ -495,10 +492,10 @@ border-bottom-left-radius: 0px;
 	}
 	
 	
-	#fb7 .fb7-page-book .center {
-		/*text-align:center;
-		padding-top:65%;/*/
-	}
+	/*#fb7 .fb7-page-book .center {
+		text-align:center;
+		padding-top:65%;
+	}*/
 	
 	#fb7 .fb7-page-book img {
 		border:none;
@@ -520,7 +517,7 @@ border-bottom-left-radius: 0px;
 	#fb7 .fb7-page-book a {
 		text-decoration:underline;
 		color:#64C8D3;
-		/*font-weight:bold;/*/
+		/*font-weight:bold;*/
 	}
 	
 	#fb7 .fb7-page-book p a:hover {
@@ -579,7 +576,7 @@ border-bottom-left-radius: 0px;
 	
 	/* =WordPress Core
 -------------------------------------------------------------- */
-#fb7 .fb7-page-book .alignnone,.#fb7-about .alignnone {
+#fb7 .fb7-page-book .alignnone,#fb7-about .alignnone {
     margin: 5px 20px 20px 0;
 }
 
@@ -683,26 +680,26 @@ border-bottom-left-radius: 0px;
 		ms-transform:scale(2);
 		-webkit-transform:scale(2);
 	}
-	/*/
+	*/
 }
 
 
 
  /* all icons for flipbook */
-		#fb7 .fb7-nav-arrow,#fb7 .fb7-menu li {
+		/*#fb7 .fb7-nav-arrow,#fb7 .fb7-menu li {
 		   background:url(../images/icons.png) no-repeat;
 	    }
 		
 		#fb7 .fb7-menu li {		
 	        background-position: -39px 0px ;
-		}
+		}*/
 		
 	
 	
 	 	
 	    /* background flipbook */
 		#fb7 .fb7-bcg-book{
-			background-image:url(../images/bcg.jpg);
+			background-image: url(../images/bcg.jpg);
 		}
 		
 		
@@ -721,7 +718,7 @@ border-bottom-left-radius: 0px;
 
 		
 		#fb7 .fb7-tooltip{
-		 background: -webkit-linear-gradient(#284F06,#162B04)repeat scroll 0 0 rgba(0, 0, 0, 0) 		 background: -o-linear-gradient(#284F06,#162B04) repeat scroll 0 0 rgba(0, 0, 0, 0);
+		 background: -webkit-linear-gradient(#284F06,#162B04)repeat scroll 0 0 rgba(0, 0, 0, 0); 		 background: -o-linear-gradient(#284F06,#162B04) repeat scroll 0 0 rgba(0, 0, 0, 0);
 		 background: -moz-linear-gradient(#284F06,#162B04) repeat scroll 0 0 rgba(0, 0, 0, 0);
 		 background: linear-gradient(#284F06,#162B04) repeat scroll 0 0 rgba(0, 0, 0, 0);
 	     border: 1px solid #488015;
@@ -729,14 +726,16 @@ border-bottom-left-radius: 0px;
 		 color:#FFFFFF;
 		}
 		
-		/* logo /*/
+		/* logo */
+		/*
 		#fb7 #fb7-footer #fb7-logo {
 			left: 12px;
 			top: -5px;
 		}
+		*/
 				
 		
-		/*  page manager   /*/	
+		/*  page manager   */	
 		#fb7 .fb7-menu li.fb7-goto input[type="text"] {
 		   	 color:#000000;	
 			 background: none repeat scroll 0 0 #ffffffc2;
@@ -761,19 +760,19 @@ border-bottom-left-radius: 0px;
 		
 		
 		
-		/* book /*/
+		/* book */
 		
 		#fb7 .fb7-shadow {
 						box-shadow: 0 0 10px 1px #666666;
 			        }
 		
-		/* corner left page /*/
+		/* corner left page */
 		#fb7 .turn-page.odd{
 			border-top-left-radius:  0px;
 			border-bottom-left-radius:  0px; 
 		}
 		
-		/* corner right page /*/		
+		/* corner right page */		
 		#fb7 .turn-page.even{			
 			border-top-right-radius:  0px;
 			border-bottom-right-radius:  0px;
@@ -813,7 +812,7 @@ border-bottom-left-radius: 0px;
 		}
 		
 		#fb7 .fb7-meta .fb7-num {
-		   /* text /*/
+		   /* text */
 		   color:#FFFFFF;
 		   text-shadow: 2px 2px 6px #666666;
 			 
@@ -821,13 +820,13 @@ border-bottom-left-radius: 0px;
 		
 		
 		
-		/* list thumbs /*/
+		/* list thumbs */
 		#fb7 #fb7-all-pages .fb7-container-pages {
 		    background: none repeat scroll 0 0 #000000;
 						box-shadow: 0 0 40px rgba(245,220, 11, 0.8);
 		}
 		
-		/* form /*/
+		/* form */
 		#fb7 #fb7-contact form {
    			 background: none repeat scroll 0 0 #161616;
 			 			 box-shadow: 0 0 60px rgba(100,200,211, 0.7);
@@ -856,20 +855,20 @@ border-bottom-left-radius: 0px;
 		
 		
 		
-		/* preloader /*/
+		/* preloader */
 		#fb7 .fb7-preloader .wBall .wInnerBall{
             background:#F4B467;
 		}
 	
 		
-		/* arrow gif /*/
+		/* arrow gif 
 		#fb7 .fb7-nav-arrow {
    			
-		}
+		}*/
 		
 		
 		
-		/* formatt page for flipbook  /*/
+		/* formatt page for flipbook  */
 		#fb7 .fb7-page-book p {
 		   color:#77797F;
 		   font-family:Nunito;
@@ -918,7 +917,7 @@ border-bottom-left-radius: 0px;
 		}
 
         
-		/*  about style  /*/
+		/*  about style  */
 		#fb7 #fb7-about p,#fb7 #fb7-about li {
 		   color: #344F02;
 		   font-family:Nunito;
@@ -958,7 +957,7 @@ border-bottom-left-radius: 0px;
 		   font-family:Nunito;
 		   font-size:16px;
 	    }  
-		/* back  button /*/ 
+		/* back  button */ 
 		#fb7 #fb7-button-back {
     		color: #803900;				
 						
@@ -993,7 +992,7 @@ border-bottom-left-radius: 0px;
 		
 				
 		
-		/*  Other style   /*/
+		/*  Other style   */
 		#fb7 .fb7-overlay {
 			                	background:rgba(0,0,0,0.6);
         }

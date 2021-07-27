@@ -1,9 +1,10 @@
 /* = Menu
 -------------------------------------------------------------- */
 
+/*
 #fb7 .fb7-menu {
 	
-}
+}*/
 
 #fb7 .fb7-menu ul {
 	list-style: none; 
@@ -13,26 +14,25 @@
 #fb7 .fb7-menu li {
 	float: left ;
 	position: relative;
-	width: 38px;
-	height: 65px;
+	width: 60px;
+	height: 60px;
 	margin: 0;
 	padding:0px 2px 0 2px;
 	list-style: none;		
 	/*background: url(../img/icons.png) no-repeat/*/
-	background-position: -39px 0px ;
-	
-	border: 0px solid #F00;
+	/*background-position: -39px 0px ;*/	
+	/*border: 0px solid #F00;*/
 }
 
 #fb7 .fb7-menu li:last-child {
-	background-position:-76px 0px ;
+	/*background-position:-76px 0px ;*/
 	padding:0;
 	width: 48px;
 	
 }
 
 #fb7 .fb7-menu li:first-child {
-	background-position:0px 0px ;
+	/*background-position:0px 0px ;*/
 	padding:0;
 	width: 48px;
 	
@@ -40,47 +40,49 @@
 
 #fb7 .fb7-menu li a {
 	display: block;
-	background:inherit;
-	width: 38px;
-	height: 65px;
+	/*background:inherit;*/
+	width: 48px;
+	height: 48px;
 	margin:-37px 0px;
 	
 	
 }
 
-#fb7 .fb7-menu li a.fb7-download				{ background-position: 0 -65px; }
-#fb7 .fb7-menu li a.fb7-download:hover			{ background-position: 0 -130px; }
+/*#fb7 .fb7-menu li a.fb7-download				{ background-position: 0 -65px; }
+#fb7 .fb7-menu li a.fb7-download:hover			{ background-position: 0 -130px; }*/
 
-#fb7 .fb7-menu li a.fb7-home					{ background-position: -228px -65px; }
-#fb7 .fb7-menu li a.fb7-home:hover				{ background-position: -228px -130px; }
+#fb7 .fb7-menu li a.fb7-home					{ background-image: url(../images/homepage.svg); }
+#fb7 .fb7-menu li a.fb7-home:hover				{ background-image: url(../images/homepage_hover.svg);}
 
-#fb7 .fb7-menu li a.contact				        { background-position: -226px -5px; }
-#fb7 .fb7-menu li a.contact:hover			    { background-position: -226px -5px; }
+/*#fb7 .fb7-menu li a.contact				        { background-position: -226px -5px; }
+#fb7 .fb7-menu li a.contact:hover			    { background-position: -226px -5px; }*/
 
-#fb7 .fb7-menu li a.fb7-fullscreen				{ background-position: -266px -65px; }
-#fb7 .fb7-menu li a.fb7-fullscreen:hover		{ background-position: -266px -130px; }
+#fb7 .fb7-menu li a.fb7-fullscreen				{ background-image: url(../images/screenfull.svg); }
+#fb7 .fb7-menu li a.fb7-fullscreen:hover		{ background-image: url(../images/screenfull_hover.svg);}
 
 
-#fb7 .fb7-menu li a.fb7-show-all				{ background-position: -190px -65px; }
-#fb7 .fb7-menu li a.fb7-show-all:hover			{ background-position: -190px -130px; }
+#fb7 .fb7-menu li a.fb7-show-all				{ background-image: url(../images/pages.svg); }
+#fb7 .fb7-menu li a.fb7-show-all:hover			{ background-image: url(../images/pages_hover.svg);}
 
-#fb7 .fb7-menu li a.fb7-zoom-auto				{ background-position: -114px -65px; }
-#fb7 .fb7-menu li a.fb7-zoom-auto:hover		    { background-position: -114px -130px; }
+#fb7 .fb7-menu li a.fb7-zoom-auto				{ background-image: url(../images/zoomcenter.svg); }
+#fb7 .fb7-menu li a.fb7-zoom-auto:hover		    { background-image: url(../images/zoomcenter_hover.svg); }
 	
-#fb7 .fb7-menu li a.fb7-zoom-in				    { background-position: -76px -65px; }
-#fb7 .fb7-menu li a.fb7-zoom-in:hover			{ background-position: -76px -130px; }
-	
+#fb7 .fb7-menu li a.fb7-zoom-in				    { background-image: url(../images/zoomadd.svg); }
+#fb7 .fb7-menu li a.fb7-zoom-in:hover			{ background-image: url(../images/zoomadd_hover.svg);}
+
+/*
 #fb7 .fb7-menu li a.fb7-zoom-original			{ background-position: -152px -65px; }
 #fb7 .fb7-menu li a.fb7-zoom-original:hover	    { background-position: -152px -130px; }
+*/
 
-#fb7 .fb7-menu li a.fb7-zoom-out				{ background-position: -37px -65px; }
-#fb7 .fb7-menu li a.fb7-zoom-out:hover			{ background-position: -37px -130px; }
+#fb7 .fb7-menu li a.fb7-zoom-out				{ background-image: url(../images/zoomlose.svg); }
+#fb7 .fb7-menu li a.fb7-zoom-out:hover			{ background-image: url(../images/zoomlose_hover.svg); }
 
 
 #fb7 .fb7-menu#fb7-center {
 	width: auto;
 	margin-top: 14px;
-	margin-down: 0;
+	margin-bottom: 0;
 	position:absolute;
 	
 	/*
