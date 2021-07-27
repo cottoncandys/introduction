@@ -29,11 +29,11 @@
     <div class="layerT m"></div>
         <div class="flexContainerBtn">
             <a  class="icon-box btn-showmore-close" id="prior"></a>
-            <!--title="illustration_NIU" target="_parent" onclick="window.location.href= 'index.html#tabs';"-->
+            <!--title="illustration_NIU" target="_parent" onclick="window.location.href= 'index.html#tabs';" href="javascript:window.history.back('index.html#niu')-->
         </div>
         <div class="section-title illustration">
             <div class="flexContainerBtn">
-                <a class="box-img illustration" href="javascript:window.history.back('index.html#niu');"></a>
+                <a class="box-img illustration" onclick="window.location.href='index.html#illustration'"></a>
             </div>
             <svg>
                 <text x="0" y="50%" dominant-baseline="middle">
@@ -107,7 +107,6 @@
 
 
     
-    <script src="js/chart-radar.js"></script>
     <script src="js/script.js"></script>
     <script src="js/slider_tab.js"></script>
     <script src="js/wow.js"></script>
@@ -115,15 +114,9 @@
         //$('#prior').load('index.html #niu');
        //let prior = document.getElementById("prior");
        $("#prior").click(function () {
-            // window.location.replace('index.html#niu');
-            alert('test');
+             window.location.replace('index.html#niu');
+             //window.history.back('index.html#niu');
        })
-    
-        
-
-        
-            
-                
     </script>
 
 </body>

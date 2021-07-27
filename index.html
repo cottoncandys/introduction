@@ -1032,7 +1032,7 @@
                 <li class="wow fadeInLeft" data-wow-delay="2.8s">Web</li>
                 <li class="wow fadeInLeft" data-wow-delay="3.0s">App</li>
                 <li class="wow fadeInLeft" data-wow-delay="3.2s">Unity</li>
-                <li class="wow fadeInLeft" data-wow-delay="3.4s">ZBrush</li>
+                <li class="wow fadeInLeft" data-wow-delay="3.4s">3D</li>
               </ul>
             </hgroup>
           </div>
@@ -1286,7 +1286,7 @@
             <li><span>AI</span></li>
             <li><span>PS</span></li>
             <li><span>Painter</span></li>
-            <li><span>Sketch</span></li>
+            <li><span>Sketch,<br>Figma</span></li>
             <li><span>Zeplin</span></li>
             <li><span>DW,Fw</span></li>
             <li><span>AdobeXD</span></li>
@@ -1528,7 +1528,7 @@
                   <li><i class="fas fa-star"></i>白沙屯媽祖進香。</li>
                   <li><i class="fas fa-star"></i>學習烘焙。</li>
                   <li><i class="fas fa-star"></i>接案件。</li>
-                  <li><i class="fas fa-star"></i>自我進修學習Javascript、Sketch等語言工具。</li>
+                  <li><i class="fas fa-star"></i>自我進修學習Javascript、Sketch、Figma等語言工具。</li>
                   <li><i class="fas fa-star"></i>上課:遊戲開發。學習C#、Unity、ZBrush、遊戲企劃、Ureal、AR/VR。</li>
                 </ul>
               </div>
@@ -1765,14 +1765,15 @@
           <!--scroll tabs-->
           <ul id="tabs" class="nav nav-tabs wow zoomIn" role="tablist">
            
+            
             <li id="tab1" role="presentation" class="wow zoomIn active">
-              <a class="box-img web" href="#web" aria-controls="web" role="tab" data-toggle="tab">
-                <h4>Web</h4>
+              <a class="box-img app" href="#app" aria-controls="app" role="tab" data-toggle="tab">
+                <h4>App</h4>
               </a>
             </li>
             <li id="tab2" role="presentation" class="wow zoomIn">
-              <a class="box-img app" href="#app" aria-controls="app" role="tab" data-toggle="tab">
-                <h4>App</h4>
+              <a class="box-img web" href="#web" aria-controls="web" role="tab" data-toggle="tab">
+                <h4>Web</h4>
               </a>
             </li>
             <li id="tab3" role="presentation" class="wow zoomIn">
@@ -1798,8 +1799,41 @@
           </ul>   
           <!--scroll tabs content-->
             <div class="tab-content">
-              <div role="tabpanel" class="tab-pane active" id="web" aria-labelledby="tab1">
-                <section id="tArticle1" class="articleBlk"><!--class="tArticle articleBlk"-->
+
+              <div role="tabpanel" class="tab-pane active" id="app" aria-labelledby="tab1">
+                <section id="tArticle1" class="articleBlk">
+                  <div class="list-area">
+                    <div class="list-content">
+                      <div class="list">
+                        <a href="app_queue.html">
+                          <div class="img"><img src="img/app/queue.jpg" /></div>
+                          <div class="icon-box btn-showmore"></div>
+                        </a>
+                        <a href="app_gsf.html" id="app_gsf">
+                          <div class="img"><img src="img/app/gsf.jpg" /></div>
+                          <div class="icon-box btn-showmore"></div>
+                        </a>
+                        <a href="app_kgi.html">
+                          <div class="img"><img src="img/app/kgi.jpg" /></div>
+                          <div class="icon-box btn-showmore"></div>
+                        </a>
+                        <a href="app_money.html">
+                          <div class="img"><img src="img/app/money.jpg" /></div>
+                          <div class="icon-box btn-showmore"></div>
+                        </a>
+            
+                      </div>
+                    </div>
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                    <div class="hint"><img src="img/hint_slide.gif" /></div>
+                  </div>
+                </section>
+              </div>
+
+              <div role="tabpanel" class="tab-pane" id="web" aria-labelledby="tab2">
+                <section id="tArticle2" class="articleBlk">
+                  <!--class="tArticle articleBlk"-->
                   <div class="list-area">
                     <div class="list-content">
                       <div class="list">
@@ -1851,39 +1885,8 @@
                           <div class="img"><img src="img/web/fam.jpg" /></div>
                           <div class="icon-box btn-showmore"></div>
                         </a>
-            
-            
-                      </div>
-                    </div>
-                    <div class="prev"></div>
-                    <div class="next"></div>
-                    <div class="hint"><img src="img/hint_slide.gif" /></div>
-                  </div>
-                </section>
-              </div>
-            
-              <div role="tabpanel" class="tab-pane" id="app" aria-labelledby="tab2">
-                <section id="tArticle2" class="articleBlk">
-                  <div class="list-area">
-                    <div class="list-content">
-                      <div class="list">
-                        <a href="app_gsf.html" id="app_gsf">
-                          <div class="img"><img src="img/app/gsf.jpg" /></div>
-                          <div class="icon-box btn-showmore"></div>
-                        </a>
-                        <a href="app_kgi.html">
-                          <div class="img"><img src="img/app/kgi.jpg" /></div>
-                          <div class="icon-box btn-showmore"></div>
-                        </a>
-                        <a href="app_queue.html">
-                          <div class="img"><img src="img/app/queue.jpg" /></div>
-                          <div class="icon-box btn-showmore"></div>
-                        </a>
-                        <a href="app_money.html">
-                          <div class="img"><img src="img/app/money.jpg" /></div>
-                          <div class="icon-box btn-showmore"></div>
-                        </a>
-            
+              
+              
                       </div>
                     </div>
                     <div class="prev"></div>
@@ -2098,6 +2101,7 @@
 <script src="js/main.js"></script> <!-- navbar -->
 <script src='js/wow.js'></script>
 <script src="js/script.js"></script><!-- 主要的 -->
+<script src="js/drawChart.js"></script><!--barChart+brandRun-->
 <script src="js/slider_tab.js"></script><!--作品集頁籤-->
 
 
