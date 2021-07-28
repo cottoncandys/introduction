@@ -21895,6 +21895,9 @@ button.close:focus, button.close:hover {
   }
 }
 
+.articleBlk .list-area .list-content .list a.nofinger, .articleBlk .list-area .list-content .list a.nofinger:hover {
+    cursor: default;
+}
 .articleBlk .list-area .list-content .list a .img {
   position: relative;
   width: 100%;
@@ -21925,6 +21928,10 @@ button.close:focus, button.close:hover {
           transform: scale(1.2, 1.2);
   -webkit-transition: all 1.8s ease-in-out;
   transition: all 1.8s ease-in-out;
+}
+.articleBlk .list-area .list-content .list a.nofinger:hover .img {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 
 .articleBlk .list-area .prev {
